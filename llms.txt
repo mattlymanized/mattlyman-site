@@ -14,3 +14,10 @@
 - [Resume (PDF)](https://mattlyman.com/Matt_Lyman_Resume.pdf)
 - [LinkedIn](https://www.linkedin.com/in/mattlyman)
 - [R.I.D.E. 4 ALL](https://www.ride4all.org)
+
+## Talks and podcasts
+- [Welcome to the era of B2H](https://podcasts.apple.com/us/podcast/welcome-to-the-era-of-b2h-w-matt-lyman/id1747223698?i=1000723724993): Marketers of Technology, 2025. The B2H philosophy: even in B2B, you're selling to people, not companies.
+- [From Ops to Strategy: The Rise of a Marketing Generalist](https://podcasts.apple.com/us/podcast/from-ops-to-strategy-the-rise-of-a/id1772999666?i=1000699612652): Content Matters, 2025. How a path through theater, collections, and marketing ops shaped Matt's leadership, and why strong marketers understand both operations and creativity.
+- [Transforming CRM in financial services: LeanData's approach](https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach): Streamly, for Finovate, 2024. Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.
+- [Empathy and Inclusion: The Cornerstones of Leadership](https://podcasts.apple.com/us/podcast/empathy-and-inclusion-the-cornerstones-of/id1690523496?i=1000615317173): The Hype Within, 2023. How empathy, inclusion, and psychological safety shape the way Matt leads.
+- [Making dad jokes with Matt Lyman](https://podcasts.apple.com/us/podcast/making-dad-jokes-with-matt-lyman/id1672705227?i=1000604468650): Everything's Coming Up Marketing, 2023. Parenthood and full-time work, why marketing is a lot like sports, and building inclusive spaces for learning and play.
