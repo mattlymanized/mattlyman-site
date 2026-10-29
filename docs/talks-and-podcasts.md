@@ -33,7 +33,7 @@ Note: this repo is public, so this file is too. Keep it to what is already publi
 - **Good for talking about:** ops-plus-strategy as one function; hiring for ability, not tool lists.
 
 ## 4. Transforming CRM in financial services: LeanData's approach
-- **Show:** Streamly video, Finovate content, sponsored by LeanData (video, not a podcast)
+- **Show:** Finovate video, hosted on Streamly, about LeanData (video, not a podcast)
 - **Date:** May 21, 2024. **Length:** not stated
 - **Matt's title on the page:** VP of Marketing, LeanData (his resume title is VP of Demand Generation)
 - **Link:** https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach
@@ -54,3 +54,17 @@ Note: this repo is public, so this file is too. Keep it to what is already publi
 - **Link:** https://podcasts.apple.com/us/podcast/making-dad-jokes-with-matt-lyman/id1672705227?i=1000604468650
 - **Summary:** Parenthood and full-time work, why marketing is basically sports, and being a champion for inclusive spaces for learning and play. Mentions R.I.D.E. 4 ALL, 321 for 3.21, and World Down Syndrome Day.
 - **Good for talking about:** the community work; the lighter, human side.
+
+## Webinars and panels (added Oct 29, 2026)
+
+Roles and details come from LeanData's and RevGenius's own pages. Only the GTM efficiency page names Matt (host and moderator). On the other LeanData pages he is not named, so Matt's role (moderator) is from Matt, not the page. Dates were not listed on the pages.
+
+- **RevCon 2024: Demand Gen Playbook: How to Scale Beyond $25M** (RevGenius). Panelist. Moderator Jason Hubbard, CEO of RevGenius. Other panelists: Jennifer McAdams (Xactly), Jane Serra (Daxtra Technologies), Gina Guriere (RevGenius). https://www.youtube.com/watch?v=pEEVwaP_GQc (also on LeanData's resources page)
+- **Report Insights: Cracking the Code of GTM Efficiency in 2024** (LeanData). Host and moderator. Panelists from UserGems, Qualified, and LeanData's CSO. Built on LeanData's 2024 GTM efficiency report. https://www.leandata.com/resources/report-insights-cracking-the-code-of-gtm-efficiency-in-2024/
+- **3 Ways to Maximize Returns for Your Next Event** (LeanData with CaptivateIQ and Qualified). https://www.leandata.com/resources/events-playbook-webinar/
+- **Steal that Playbook: Activating Your Event Strategy** (LeanData with Spekit and CaptivateIQ). https://www.leandata.com/resources/activating-your-event-strategy/
+- **Maximizing Success: Getting the Most Out of Your Event Strategy** (LeanData). https://www.leandata.com/resources/maximizing-success-getting-the-most-out-of-your-event-strategy/
+- **Steal that Playbook: 3 Killer Strategies for High-Octane Co-Selling** (LeanData with Cognism and Crossbeam). https://www.leandata.com/resources/strategies-for-high-octane-co-selling/
+- **Steal that Playbook: Ideas to Make Your Buyers Champions for Life** (LeanData with UserGems and Sendoso). https://www.leandata.com/resources/champions-for-life-webinar/
+
+Left off on purpose: LeanData's blog post "5 Proven Strategies for Converting Event Attendees into Leads." Kim Peterson wrote it about one of these webinars.

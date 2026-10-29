@@ -7,6 +7,7 @@
 - LeanData: marketing's share of new business pipeline went from 18% to 50% while demand gen spend fell 41%.
 - Flosum: cost per paid MQL down 87% in six months; meetings from paid up 467%; monthly search impressions up 1,329% after an SEO and GEO/AEO rebuild.
 - Chef: revenue team grew about 2.7x through acquisition by Progress; SDR and BDR teams averaged 120%+ of quota.
+- Award: named a FINITE Influential 30 Marketer in B2B SaaS, 2023.
 - Community: founder of R.I.D.E. 4 ALL (inclusive recreation nonprofit); president of the Highline Special Needs PTA.
 
 ## Links
@@ -15,10 +16,17 @@
 - [LinkedIn](https://www.linkedin.com/in/mattlyman)
 - [R.I.D.E. 4 ALL](https://www.ride4all.org)
 
-## Talks and podcasts
+## Talks, podcasts, and webinars
 - [How can teams build trust to maintain consistent brand messaging?](https://podcasts.apple.com/us/podcast/how-can-teams-build-trust-to-maintain-consistent-brand/id1648953137?i=1000728017889): Straight To Voicemail, 2025. Why brand consistency is really about trust, and how documentation, transparent strategy, and feedback loops keep teams aligned.
 - [Welcome to the era of B2H](https://podcasts.apple.com/us/podcast/welcome-to-the-era-of-b2h-w-matt-lyman/id1747223698?i=1000723724993): Marketers of Technology, 2025. The B2H philosophy: even in B2B, you're selling to people, not companies.
 - [From Ops to Strategy: The Rise of a Marketing Generalist](https://podcasts.apple.com/us/podcast/from-ops-to-strategy-the-rise-of-a/id1772999666?i=1000699612652): Content Matters, 2025. How a path through theater, collections, and marketing ops shaped Matt's leadership, and why strong marketers understand both operations and creativity.
-- [Transforming CRM in financial services: LeanData's approach](https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach): Streamly, for Finovate, 2024. Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.
 - [Empathy and Inclusion: The Cornerstones of Leadership](https://podcasts.apple.com/us/podcast/empathy-and-inclusion-the-cornerstones-of/id1690523496?i=1000615317173): The Hype Within, 2023. How empathy, inclusion, and psychological safety shape the way Matt leads.
 - [Making dad jokes with Matt Lyman](https://podcasts.apple.com/us/podcast/making-dad-jokes-with-matt-lyman/id1672705227?i=1000604468650): Everything's Coming Up Marketing, 2023. Parenthood and full-time work, why marketing is a lot like sports, and building inclusive spaces for learning and play.
+- [RevCon 2024: Demand Gen Playbook: How to Scale Beyond $25M](https://www.youtube.com/watch?v=pEEVwaP_GQc): RevGenius, Panelist, 2024. Four marketing leaders on how to scale demand generation past $25M in revenue, moderated by RevGenius CEO Jason Hubbard.
+- [Report Insights: Cracking the Code of GTM Efficiency in 2024](https://www.leandata.com/resources/report-insights-cracking-the-code-of-gtm-efficiency-in-2024/): LeanData, Moderator, 2024. A panel with leaders from UserGems, Qualified, and LeanData on the 2024 go-to-market efficiency report: opportunity-based selling, AI in SDR work, and tech stack consolidation.
+- [Transforming CRM in financial services: LeanData's approach](https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach): Finovate, 2024. Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.
+- [3 Ways to Maximize Returns for Your Next Event](https://www.leandata.com/resources/events-playbook-webinar/): LeanData, Moderator. Event experts from LeanData, CaptivateIQ, and Qualified on getting buy-in, booking meetings, and choosing which conferences to sponsor.
+- [Steal that Playbook: Activating Your Event Strategy](https://www.leandata.com/resources/activating-your-event-strategy/): LeanData, Moderator. Before, during, and after: how sales, marketing, and ops align on event goals, stand out on the floor, and follow up.
+- [Maximizing Success: Getting the Most Out of Your Event Strategy](https://www.leandata.com/resources/maximizing-success-getting-the-most-out-of-your-event-strategy/): LeanData, Moderator. Booking more meetings before the event, engaging the people walking past the booth, and reaching the right ones by phone afterward.
+- [Steal that Playbook: 3 Killer Strategies for High-Octane Co-Selling](https://www.leandata.com/resources/strategies-for-high-octane-co-selling/): LeanData, Moderator. Using partner data and intent signals to find new deals, support account-based plays, and spot churn risk.
+- [Steal that Playbook: Ideas to Make Your Buyers Champions for Life](https://www.leandata.com/resources/champions-for-life-webinar/): LeanData, Moderator. Activating champions to close deals and build loyalty, including personalized gifting and less manual work.
