@@ -298,7 +298,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
  <div class="wrap">
   <h2>The work</h2>
   <div class="roles">
-   <article class="rel">
+   <article class="role">
     <header><h3>Flosum</h3><span class="when">Apr 2025 to Jun 2026</span></header>
     <p class="title">VP of Marketing</p>
     <p class="scope">Rebuilt the marketing function at an enterprise Salesforce governance platform. Reported to the CEO, led a team of 5. Agency partners ran the ad accounts. I owned strategy, measurement, and creative direction.</p>
@@ -310,7 +310,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
      <li>Built an agent with product marketing that tracks competitor and industry news and hands Sales what changed, and an ABM dashboard that pulls ad, intent, and site data into one view. Also set up the AI SDR.</li>
     </ul>
    </article>
-   <article class="rel">
+   <article class="role">
     <header><h3>LeanData</h3><span class="when">Feb 2022 to Nov 2024</span></header>
     <p class="title">VP of Demand Generation</p>
     <p class="scope">Moved the team from growth-at-all-costs to a demand model that scaled. Team of 4.</p>
@@ -322,7 +322,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
      <li>Widened the audience from RevOps to sales and marketing leaders, then IT managers. Led the internal rollout of the Revenue Orchestration Platform.</li>
     </ul>
    </article>
-   <article class="rel">
+   <article class="role">
     <header><h3>Chef Software</h3><span class="when">2015 to 2022</span></header>
     <p class="title">Director of Revenue Marketing at exit</p>
     <p class="scope">Ran demand gen, ops, web, and SDR teams. Team of 7. Joined the business unit leadership team after Progress acquired Chef.</p>
