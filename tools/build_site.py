@@ -5,41 +5,69 @@ LI="https://www.linkedin.com/in/mattlyman"
 e=html.escape
 
 faq=[
-("Who is Matt Lyman?","Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Revenue Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress."),
+("Who is Matt Lyman?","Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Revenue Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He was named a FINITE Influential 30 Marketer in B2B SaaS in 2023."),
 ("What does Matt Lyman do?","He is a B2B marketing leader who builds demand generation programs around buyer stories and the data to prove they work. He has built demand engines across paid media, ABM, SEO, events, and content at Chef, LeanData, and Flosum, and builds with AI every day."),
-("What is B2H?","Business to human is Matt's approach to B2B marketing. Every campaign starts with a real story about who the buyer is and what they're afraid of, because a person makes the decision at the end of every enterprise deal."),
+("What is B2H?","Business to human is Matt's marketing philosophy. B2B and B2C are labels for what the buyer is spending, but the buyer is a person either way, with pain points, worries, and hopes. Matt builds marketing that finds the gap that person is living with and fills it: a need, an emotion, a simpler day. It shows up in how he tells stories, the content he makes, and how his teams work."),
 ("What results has Matt driven?","At LeanData, marketing's share of new business pipeline went from 18% to 50% while demand gen spend fell 41%. At Flosum, cost per paid MQL fell 87% in six months and monthly search impressions grew 1,329%."),
 ("What is Matt's experience with ABM and GEO/AEO?","At Flosum, Matt ran ABM across 51 named accounts and 10 AEs. Target accounts clicked at 3 to 7x the campaign average, and 7 became opportunities within five months. He also led an SEO and GEO/AEO rebuild with 120+ assets updated, rebuilt FAQs, and third-party authority placements, which took monthly search impressions from 70,000 to over one million."),
-("How does Matt use AI?","Matt builds with AI every day. At Flosum he worked with product marketing on an agent that tracks competitor and industry news for Sales, built an ABM dashboard that pulls ad, intent, and site data into one view, set up an AI SDR, and rebuilt content for AI search (GEO/AEO)."),
+("How does Matt use AI?","Matt builds with AI every day. At Flosum he worked with product marketing on an agent that tracks competitor and industry news for Sales, built an ABM dashboard that pulls ad, intent, and site data into one view, set up an AI SDR, and rebuilt content for AI search (GEO/AEO). This site was built with Claude, and its code is public on GitHub. The What I Build with AI section on this page has the details."),
 ("What roles is Matt open to?","Matt is open to VP, Head of, and Senior Director roles in marketing, demand generation, and growth at growth-stage B2B software companies."),
 ("What does Matt do outside of marketing?","He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA. He also rides bikes, a lot."),
-("Where can I hear Matt talk about marketing and leadership?","Matt has been a guest on Marketers of Technology, Straight To Voicemail, Content Matters, The Hype Within, and Everything's Coming Up Marketing, and gave a Finovate talk on LeanData's revenue orchestration platform. Links to each are in the Talks and podcasts section of this page."),
+("Where can I hear Matt talk about marketing and leadership?","Matt has been a guest on Marketers of Technology, Straight To Voicemail, Content Matters, The Hype Within, and Everything's Coming Up Marketing. He moderated LeanData webinars on event strategy, co-selling, customer champions, and go-to-market efficiency, was a panelist at RevGenius's RevCon 2024 on scaling demand generation past $25M, and gave a Finovate talk on LeanData's revenue orchestration platform. Links to each are in the Talks, podcasts, and webinars section of this page."),
 ("Where is Matt based and how can I reach him?","Seattle, working remotely since 2020. The best way to reach him is LinkedIn at linkedin.com/in/mattlyman."),
 ]
 
 
 episodes=[
- {"show":"Straight To Voicemail","title":"How can teams build trust to maintain consistent brand messaging?","date":"2025-09-23","year":"2025","mins":5,
+ {"show":"Straight To Voicemail","title":"How can teams build trust to maintain consistent brand messaging?","date":"2025-09-23","year":"2025","mins":5,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/how-can-teams-build-trust-to-maintain-consistent-brand/id1648953137?i=1000728017889",
   "blurb":"Why brand consistency is really about trust, and how documentation, transparent strategy, and feedback loops keep teams aligned.","type":"podcast"},
- {"show":"Marketers of Technology","title":"Welcome to the era of B2H","date":"2025-08-27","year":"2025","mins":33,
+ {"show":"Marketers of Technology","title":"Welcome to the era of B2H","date":"2025-08-27","year":"2025","mins":33,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/welcome-to-the-era-of-b2h-w-matt-lyman/id1747223698?i=1000723724993",
   "blurb":"The B2H philosophy: even in B2B, you're selling to people, not companies.","type":"podcast"},
- {"show":"Content Matters","title":"From Ops to Strategy: The Rise of a Marketing Generalist","date":"2025-03-18","year":"2025","mins":46,
+ {"show":"Content Matters","title":"From Ops to Strategy: The Rise of a Marketing Generalist","date":"2025-03-18","year":"2025","mins":46,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/from-ops-to-strategy-the-rise-of-a/id1772999666?i=1000699612652",
   "blurb":"How a path through theater, collections, and marketing ops shaped Matt's leadership, and why strong marketers understand both operations and creativity.","type":"podcast"},
- {"show":"Streamly, for Finovate","title":"Transforming CRM in financial services: LeanData's approach","date":"2024-05-21","year":"2024","mins":None,
-  "url":"https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach",
-  "blurb":"Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.","type":"video"},
- {"show":"The Hype Within","title":"Empathy and Inclusion: The Cornerstones of Leadership","date":"2023-06-01","year":"2023","mins":36,
+ {"show":"The Hype Within","title":"Empathy and Inclusion: The Cornerstones of Leadership","date":"2023-06-01","year":"2023","mins":36,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/empathy-and-inclusion-the-cornerstones-of/id1690523496?i=1000615317173",
   "blurb":"How empathy, inclusion, and psychological safety shape the way Matt leads.","type":"podcast"},
- {"show":"Everything's Coming Up Marketing","title":"Making dad jokes with Matt Lyman","date":"2023-03-16","year":"2023","mins":47,
+ {"show":"Everything's Coming Up Marketing","title":"Making dad jokes with Matt Lyman","date":"2023-03-16","year":"2023","mins":47,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/making-dad-jokes-with-matt-lyman/id1672705227?i=1000604468650",
   "blurb":"Parenthood and full-time work, why marketing is a lot like sports, and building inclusive spaces for learning and play.","type":"podcast"},
+ {"show":"RevGenius","role":"Panelist","title":"RevCon 2024: Demand Gen Playbook: How to Scale Beyond $25M","date":"2024-10-11","year":"2024","mins":None,"cat":"web",
+  "url":"https://www.youtube.com/watch?v=pEEVwaP_GQc",
+  "blurb":"Four marketing leaders on how to scale demand generation past $25M in revenue, moderated by RevGenius CEO Jason Hubbard.","type":"webinar"},
+ {"show":"LeanData","role":"Moderator","title":"Report Insights: Cracking the Code of GTM Efficiency in 2024","date":"2024-11-07","year":"2024","mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/report-insights-cracking-the-code-of-gtm-efficiency-in-2024/",
+  "blurb":"A panel with leaders from UserGems, Qualified, and LeanData on the 2024 go-to-market efficiency report: opportunity-based selling, AI in SDR work, and tech stack consolidation.","type":"webinar"},
+ {"show":"Finovate","host":"Streamly","title":"Transforming CRM in financial services: LeanData's approach","date":"2024-05-21","year":"2024","mins":None,"cat":"web",
+  "url":"https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach",
+  "blurb":"Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.","type":"video"},
+ {"show":"LeanData","role":"Moderator","title":"3 Ways to Maximize Returns for Your Next Event","date":None,"year":None,"mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/events-playbook-webinar/",
+  "blurb":"Event experts from LeanData, CaptivateIQ, and Qualified on getting buy-in, booking meetings, and choosing which conferences to sponsor.","type":"webinar"},
+ {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Activating Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/activating-your-event-strategy/",
+  "blurb":"Before, during, and after: how sales, marketing, and ops align on event goals, stand out on the floor, and follow up.","type":"webinar"},
+ {"show":"LeanData","role":"Moderator","title":"Maximizing Success: Getting the Most Out of Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/maximizing-success-getting-the-most-out-of-your-event-strategy/",
+  "blurb":"Booking more meetings before the event, engaging the people walking past the booth, and reaching the right ones by phone afterward.","type":"webinar"},
+ {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: 3 Killer Strategies for High-Octane Co-Selling","date":None,"year":None,"mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/strategies-for-high-octane-co-selling/",
+  "blurb":"Using partner data and intent signals to find new deals, support account-based plays, and spot churn risk.","type":"webinar"},
+ {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Ideas to Make Your Buyers Champions for Life","date":None,"year":None,"mins":None,"cat":"web",
+  "url":"https://www.leandata.com/resources/champions-for-life-webinar/",
+  "blurb":"Activating champions to close deals and build loyalty, including personalized gifting and less manual work.","type":"webinar"},
 ]
+def ep_meta(x):
+    parts=[x["show"]+(" (on "+x["host"]+")" if x.get("host") else "")]
+    if x.get("role"): parts.append(x["role"])
+    if x["year"]: parts.append(x["year"])
+    if x["mins"]: parts.append(str(x["mins"])+" min")
+    if x["type"]=="video": parts.append("video")
+    return " &middot; ".join(e(t) for t in parts)
 eps_html="\n".join(
- f'<li><span class="show">{e(x["show"])} &middot; {x["year"]}{(" &middot; "+str(x["mins"])+" min") if x["mins"] else ""}{" &middot; video" if x["type"]=="video" else ""}</span>'
+ f'<li data-g="{x["cat"]}"><span class="show">{ep_meta(x)}</span>'
  f'<a href="{x["url"]}" rel="noopener">{e(x["title"])}</a><p>{e(x["blurb"])}</p></li>' for x in episodes)
 
 faq_html="\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in faq)
@@ -47,7 +75,7 @@ faq_html="\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' 
 jsonld={"@context":"https://schema.org","@graph":[
  {"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"Matt Lyman","inLanguage":"en-US","publisher":{"@id":SITE+"/#person"}},
  {"@type":"ProfilePage","@id":SITE+"/#webpage","url":SITE+"/","name":"Matt Lyman | B2B Marketing Leader, Demand Generation","isPartOf":{"@id":SITE+"/#website"},"about":{"@id":SITE+"/#person"},"mainEntity":{"@id":SITE+"/#person"},"inLanguage":"en-US"},
- {"@type":"Person","@id":SITE+"/#person","name":"Matt Lyman","url":SITE+"/","image":SITE+"/images/matt-headshot.jpg","jobTitle":"B2B Marketing Leader","description":"B2B marketing leader with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. Most recently VP of Marketing at Flosum.",
+ {"@type":"Person","@id":SITE+"/#person","name":"Matt Lyman","url":SITE+"/","image":SITE+"/images/matt-headshot.jpg","jobTitle":"B2B Marketing Leader","award":"FINITE Influential 30 Marketer in B2B SaaS (2023)","description":"B2B marketing leader with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. Most recently VP of Marketing at Flosum.",
   "address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA","addressCountry":"US"},
   "sameAs":[LI,"https://www.ride4all.org"],
   "knowsAbout":["Demand generation","Marketing operations","Account-based marketing","Paid media","SEO","Generative engine optimization","Answer engine optimization","Marketo","HubSpot","Salesforce","Lead scoring","Marketing attribution","B2B SaaS marketing","Team leadership","AI agents for marketing","Generative AI"],
@@ -59,7 +87,7 @@ jsonld={"@context":"https://schema.org","@graph":[
     {"@type":"CollegeOrUniversity","name":"Western Washington University"}],
   "owns":{"@id":SITE+"/#ride4all"}},
  {"@type":"NGO","@id":SITE+"/#ride4all","name":"R.I.D.E. 4 ALL","url":"https://www.ride4all.org","description":"A nonprofit bringing inclusive recreation to people of all abilities.","founder":{"@id":SITE+"/#person"}},
- *[ ({"@type":"PodcastEpisode","name":x["title"],"url":x["url"],"datePublished":x["date"],"timeRequired":f"PT{x['mins']}M","partOfSeries":{"@type":"PodcastSeries","name":x["show"]},"actor":{"@id":SITE+"/#person"}} if x["type"]=="podcast" else {"@type":"VideoObject","name":x["title"],"url":x["url"],"uploadDate":x["date"],"description":x["blurb"],"publisher":{"@type":"Organization","name":x["show"]},"actor":{"@id":SITE+"/#person"}}) for x in episodes],
+ *[ ({"@type":"PodcastEpisode","name":x["title"],"url":x["url"],"datePublished":x["date"],"timeRequired":f"PT{x['mins']}M","partOfSeries":{"@type":"PodcastSeries","name":x["show"]},"actor":{"@id":SITE+"/#person"}} if x["type"]=="podcast" else {"@type":"VideoObject","name":x["title"],"url":x["url"],"uploadDate":x["date"],"description":x["blurb"],"publisher":{"@type":"Organization","name":x["show"]},"actor":{"@id":SITE+"/#person"}}) for x in episodes if x["type"] in ("podcast","video")],
  {"@type":"FAQPage","@id":SITE+"/#faq","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq]}
 ]}
 ld=json.dumps(jsonld,indent=1,ensure_ascii=False)
@@ -152,6 +180,19 @@ section{{scroll-margin-top:62px}}
 .stat .n{{font:400 clamp(2.2rem,5vw,3.2rem)/1 Anton,Impact,sans-serif;color:var(--slate)}}
 .stat .l{{font-weight:600;margin:.5em 0 .3em;line-height:1.4}}
 .stat .s{{font-size:.82rem;color:var(--muted)}}
+.pillars{{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}}
+.pillar{{background:var(--bg);border:1px solid var(--line);border-top:6px solid var(--yellow);border-radius:18px;padding:22px 24px}}
+.pillar h3{{font-size:1.5rem;margin-bottom:.4em}}
+.pillar p{{margin:0;font-size:.98rem}}
+.defn{{font-size:1.12rem;font-weight:500;background:var(--yellow-soft);border-radius:14px;padding:20px 24px;max-width:860px;margin:0 0 28px}}
+.more{{margin:20px 0 0;font-size:.95rem}}
+.lead-in{{font-size:1.05rem;margin:0 0 22px;max-width:760px}}
+.aigrid{{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}}
+.aicard{{background:var(--bg);border:1px solid var(--line);border-left:6px solid var(--yellow);border-radius:14px;padding:20px 24px}}
+.aicard h3{{font-size:1.35rem;margin-bottom:.35em}}
+.aicard p{{margin:0;font-size:.98rem}}
+.community-line+.community-line{{margin-top:-.6em}}
+.eps li[hidden]{{display:none}}
 .pull{{position:relative;z-index:1;margin:36px auto 0;max-width:760px;text-align:center}}
 .pull blockquote{{margin:0;font-size:1.2rem;font-weight:500;line-height:1.6;color:var(--ink)}}
 .pull cite{{display:block;margin-top:.7em;font-style:normal;font-size:.9rem;font-weight:700;color:var(--slate)}}
@@ -219,21 +260,26 @@ details p{{padding-bottom:4px}}
 footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:center}}
 @media (max-width:820px){{
  .hero .grid,.about,.story,.contact{{grid-template-columns:1fr}}
- .stats,.quotes{{grid-template-columns:1fr}}
+ .quotes,.pillars,.aigrid{{grid-template-columns:1fr}}
+ .stats{{grid-template-columns:1fr 1fr}}
  .hero .grid{{gap:28px}}
  .portrait{{order:-1}}
  section{{padding:40px 0}}
 }}
+@media (max-width:520px){{.stats{{grid-template-columns:1fr}}}}
 @media (prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}.btn{{transition:none}}}}
 </style>
 </head>
 <body id="top">
+<script>document.documentElement.classList.add('js')</script>
 <nav class="nav" aria-label="Page sections">
  <div class="wrap navin">
   <a class="brand" href="#top">Matt Lyman</a>
   <ul class="links">
    <li><a href="#about">About</a></li>
+   <li><a href="#b2h">B2H</a></li>
    <li><a href="#proof">Work</a></li>
+   <li><a href="#ai">AI</a></li>
    <li><a href="#community">Community</a></li>
    <li><a href="#talks">Talks</a></li>
    <li><a href="#people">Testimonials</a></li>
@@ -253,6 +299,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
     <p class="sub">Demand generation built on stories buyers believe and numbers Sales trusts.</p>
     <p>I fix pipeline. Not by throwing more budget at the top of the funnel, but by finding where it's actually broken: conversion rates, messaging that doesn't land, content that doesn't move buyers, and handoffs between Marketing, Sales, and Customer Success that leak revenue at every stage. Most recently VP of Marketing at Flosum. Seattle, remote.</p>
     <p class="community-line">Founder, R.I.D.E. 4 ALL. President, Highline Special Needs PTA.</p>
+    <p class="community-line">Named a FINITE Influential 30 Marketer in B2B SaaS, 2023.</p>
     <div class="cta">
      <a class="btn primary" href="{LI}" rel="me noopener">Message Matt on LinkedIn</a>
      <a class="btn ghost" href="/Matt_Lyman_Resume.pdf">Resume (PDF)</a>
@@ -265,9 +312,12 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   </div>
 
   <div class="stats">
-   <div class="stat"><div class="n">18% to 50%</div><div class="l">Marketing's share of new business pipeline, with demand gen spend down 41%</div><div class="s">LeanData, 2022 to 2024</div></div>
+   <div class="stat"><div class="n">18% to 50%</div><div class="l">Marketing's share of new business pipeline</div><div class="s">LeanData, 2022 to 2024</div></div>
+   <div class="stat"><div class="n">+45%</div><div class="l">Marketing-sourced pipeline on 41% less demand gen spend, in the same year</div><div class="s">LeanData, 2022 to 2023</div></div>
+   <div class="stat"><div class="n">+1,329%</div><div class="l">Monthly Google search impressions, organic, after the SEO and GEO/AEO rebuild</div><div class="s">Flosum, Sep to Nov 2025</div></div>
+   <div class="stat"><div class="n">7 of 51</div><div class="l">Named ABM accounts that became opportunities in five months</div><div class="s">Flosum, Nov to Apr</div></div>
    <div class="stat"><div class="n">87%</div><div class="l">Drop in cost per paid MQL in six months</div><div class="s">Flosum, Oct to Mar</div></div>
-   <div class="stat"><div class="n">+467%</div><div class="l">Growth in meetings booked from paid media, 3 to 17 a month</div><div class="s">Flosum, Oct to Apr</div></div>
+   <div class="stat"><div class="n">120%+</div><div class="l">Average quota attainment of the SDR and BDR teams I led</div><div class="s">Chef Software</div></div>
   </div>
 
   <figure class="pull">
@@ -283,8 +333,8 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
    <h2>About</h2>
    <p class="lead">Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Revenue Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA.</p>
    <p>I review customer calls, talk to the people who said yes and the ones who said no, and build programs around what I find. Nearly 20 years in marketing, most recently at Chef, LeanData, and Flosum. At LeanData, marketing's share of new business pipeline went from 18% to 50% while demand gen spend dropped 41%. At Flosum, cost per paid MQL fell 87% in six months and monthly search impressions grew from 70,000 to over a million.</p>
-   <p>Before software, I ran sales and marketing for a craft beer publication. I also have a degree in playwriting, and it shows. Every campaign I build starts with a story, a real one, about who the buyer is, what they're afraid of, and what changes if they solve the problem. I call it B2H, business to human, because at the end of every enterprise deal is a person making a decision. At Flosum, that meant scrapping product-first messaging and rebuilding the strategic narrative from the ground up. Then I make sure the numbers behind it are ones Sales believes.</p>
-   <p>I build with AI every day. At Flosum I worked with product marketing on an agent that tracks competitor and industry news and hands Sales what changed, built an ABM dashboard that pulled ad, intent, and site data into one view across 51 accounts, set up our AI SDR, and rebuilt our content for AI search.</p>
+   <p>Before software, I ran sales and marketing for a craft beer publication. At Flosum, I scrapped product-first messaging and rebuilt the strategic narrative from the ground up, then made sure the numbers behind it were ones Sales believes. <a href="#b2h">Here's how I think about buyers.</a></p>
+   <p>I build with AI every day. <a href="#ai">Here's what I've built.</a></p>
    <p>I lead from alongside, not above. My job is to coach my team well enough that they can take my job and go find a bigger one.</p>
   </div>
   <figure class="photo-fig">
@@ -294,7 +344,20 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
  </div>
 </section>
 
-<section id="proof" class="alt">
+<section id="b2h" class="alt">
+ <div class="wrap">
+  <h2>Every buyer is a person.</h2>
+  <p class="defn">B2H is business to human. B2B and B2C are labels for what the buyer is spending. The buyer is a person either way, with pain points, worries, hopes, and a to-do list that's too long. Whether they're choosing a streaming service or a revenue platform, what moves them is how it makes them feel: less afraid, less stuck, a little more hopeful. My job is to find the gap they're living with and show up with something that fills it. A need, an emotion, a simpler day.</p>
+  <div class="pillars">
+   <div class="pillar"><h3>How I tell it</h3><p>Every campaign starts with a real story about who the buyer is and what they're afraid of. I get it from customer calls, from the people who said yes and the ones who said no. My playwriting degree helps.</p></div>
+   <div class="pillar"><h3>What I make</h3><p>Content that sounds like a person wrote it. I've tested humor in B2B, borrowed emotional tactics from consumer marketing, and learned more from lost deals than won ones.</p></div>
+   <div class="pillar"><h3>How the team works</h3><p>The same rule runs inside the team. People do their best work when they feel seen and heard, and the people who've worked for me say so. I write the operating manual so nobody has to guess how we work. <a href="#people">See what they say.</a></p></div>
+  </div>
+  <p class="more">The long version: <a href="https://podcasts.apple.com/us/podcast/welcome-to-the-era-of-b2h-w-matt-lyman/id1747223698?i=1000723724993" rel="noopener">Welcome to the era of B2H</a>, on Marketers of Technology.</p>
+ </div>
+</section>
+
+<section id="proof">
  <div class="wrap">
   <h2>The work</h2>
   <div class="roles">
@@ -334,7 +397,21 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
     </ul>
    </article>
   </div>
-  <p class="earlier">Earlier: G2 Web Services, marketing to financial institutions (2011 to 2015). AmericanCraftBeer.com, director of sales and marketing (2014 to 2017).</p>
+  <p class="earlier">Earlier: B-Line, LLC, marketing specialist (2009 to 2011). G2 Web Services, marketing to financial institutions (2011 to 2015). AmericanCraftBeer.com, director of sales and marketing (2014 to 2017).</p>
+ </div>
+</section>
+
+<section id="ai" class="alt">
+ <div class="wrap">
+  <h2>What I build with AI</h2>
+  <p class="lead-in">Agents, dashboards, and search that AI can read. What each one does, and where you can see it.</p>
+  <div class="aigrid">
+   <div class="aicard"><h3>Competitor and industry news agent</h3><p>Built with product marketing at Flosum. It reads competitor sites, blogs, podcasts, and webinar transcripts, drops what changed into a shared sheet, and hands Sales the short version.</p></div>
+   <div class="aicard"><h3>ABM dashboard and AI SDR</h3><p>One view of ad, intent, and site data across 51 target accounts, plus executive review dashboards. I also set up the AI SDR.</p></div>
+   <div class="aicard"><h3>Search that AI can quote</h3><p>I rebuilt content so AI search tools can find and cite it: 120+ asset updates, FAQ rebuilds, and third-party authority placements. Monthly search impressions grew 1,329% alongside it.</p></div>
+   <div class="aicard"><h3>This site</h3><p>Built with Claude. It has structured data, an llms.txt file, and FAQ markup so AI search can read it, and every change goes through a reviewed pull request. <a href="https://github.com/mattlymanized/mattlyman-site" rel="noopener">The code is public.</a></p></div>
+  </div>
+  <p class="more">More on <a href="https://github.com/mattlymanized" rel="me noopener">GitHub</a>.</p>
  </div>
 </section>
 
@@ -367,8 +444,13 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 
 <section id="talks" class="alt">
  <div class="wrap">
-  <h2>Talks and podcasts</h2>
-  <ul class="eps">
+  <h2>Talks, podcasts, and webinars</h2>
+  <div class="tabs" role="tablist" data-for="eps" aria-label="Filter by format">
+   <button type="button" role="tab" aria-selected="true" data-f="all">All</button>
+   <button type="button" role="tab" aria-selected="false" data-f="pod">Podcasts</button>
+   <button type="button" role="tab" aria-selected="false" data-f="web">Webinars and talks</button>
+  </div>
+  <ul class="eps" id="eps" role="tabpanel">
 {eps_html}
   </ul>
  </div>
@@ -377,13 +459,12 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 <section id="people">
  <div class="wrap">
   <h2>What people say</h2>
-  <div class="tabs" role="tablist" aria-label="Filter testimonials by who is speaking">
+  <div class="tabs" role="tablist" data-for="quotes" aria-label="Filter testimonials by who is speaking">
    <button type="button" role="tab" aria-selected="true" data-f="all">All</button>
    <button type="button" role="tab" aria-selected="false" data-f="mgr">Managers</button>
    <button type="button" role="tab" aria-selected="false" data-f="rpt">Direct reports</button>
    <button type="button" role="tab" aria-selected="false" data-f="peer">Peers</button>
   </div>
-  <script>document.documentElement.classList.add('js')</script>
   <div class="quotes" id="quotes" role="tabpanel">
    <div class="q" data-g="mgr"><p>Matt was a key leader on my marketing team who regularly rose to the occasion and inspired his employees to do the same. His charismatic style makes him a natural mentor and coach.</p><cite><span class='who'>Dan Frechtling</span><span class="rel">Direct manager, SVP Product and Strategy, LegitScript</span></cite></div>
    <div class="q" data-g="mgr"><p>Matt's superpower isn't just that he is a fantastic operator, it's that his team and everyone they interface with become happy high performers. Also, ask him about beer.</p><cite><span class="rel">Direct manager</span></cite></div>
@@ -402,8 +483,12 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   <h2>Skills and tools</h2>
   <dl class="skl">
    <div><dt>Focus</dt><dd>Marketing leadership, demand generation, ABM, paid media, SEO and GEO/AEO, AI workflows and agents, messaging and narrative, lifecycle and lead scoring, attribution, marketing operations, sales and BDR alignment, product and category launches, events.</dd></div>
-   <div><dt>Tools</dt><dd>Marketo, HubSpot, Eloqua, Pardot, Salesforce, LeanData, Qualified, Outreach, Salesloft, Demandbase, 6sense, UserGems, Intellimize, Claude, ChatGPT.</dd></div>
-   <div><dt>Training</dt><dd>MBA, Global Marketing Management. Six Sigma Green Belt. Franklin Covey and Dale Carnegie leadership training.</dd></div>
+   <div><dt>Marketing automation and CRM</dt><dd>Marketo, HubSpot, Eloqua, Pardot, Salesforce.</dd></div>
+   <div><dt>ABM and sales</dt><dd>LeanData, Qualified, Outreach, Salesloft, Demandbase, 6sense, UserGems, Intellimize.</dd></div>
+   <div><dt>AI and build</dt><dd>Claude, ChatGPT, GitHub.</dd></div>
+   <div><dt>Project management</dt><dd>Jira, Notion, Asana, Airtable.</dd></div>
+   <div><dt>Certifications</dt><dd>LinkedIn Advertising Fundamentals (2026). Pavilion Customer-Centric Growth (2025). Demandbase Account-Based GTM (2025). 6sense Fundamentals of Next-Gen Marketing (2025). Marketing Psychology and Consumer Behavior (2025). Six Sigma Green Belt.</dd></div>
+   <div><dt>Training</dt><dd>MBA, Global Marketing Management. Franklin Covey and Dale Carnegie leadership training.</dd></div>
   </dl>
  </div>
 </section>
@@ -431,8 +516,8 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 
 <footer><div class="wrap">&copy; 2026 Matt Lyman. Seattle, WA.</div></footer>
 <script>
-(function(){{try{{var links=[].slice.call(document.querySelectorAll('.links a')),map={{}};links.forEach(function(a){{map[a.getAttribute('href').slice(1)]=a}});var secs=Object.keys(map).map(function(id){{return document.getElementById(id)}}).filter(Boolean);if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{links.forEach(function(a){{a.classList.remove('active')}});map[e.target.id].classList.add('active')}}}})}},{{rootMargin:'-45% 0px -50% 0px'}});secs.forEach(function(x){{io.observe(x)}})}}catch(e){{}}}})();
-(function(){{try{{var tabs=[].slice.call(document.querySelectorAll('.tabs [role=tab]')),qs=[].slice.call(document.querySelectorAll('#quotes .q'));function pick(t){{tabs.forEach(function(b){{b.setAttribute('aria-selected',b===t?'true':'false');b.tabIndex=b===t?0:-1}});var f=t.getAttribute('data-f');qs.forEach(function(q){{q.hidden=!(f==='all'||q.getAttribute('data-g')===f)}})}}tabs.forEach(function(b,i){{b.tabIndex=i===0?0:-1;b.addEventListener('click',function(){{pick(b)}});b.addEventListener('keydown',function(e){{var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(n<0)return;n=(n+tabs.length)%tabs.length;tabs[n].focus();pick(tabs[n]);e.preventDefault()}})}})}}catch(e){{}}}})();
+(function(){{try{{var links=[].slice.call(document.querySelectorAll('.links a')),map={{}};links.forEach(function(a){{map[a.getAttribute('href').slice(1)]=a}});var secs=Object.keys(map).map(function(id){{return document.getElementById(id)}}).filter(Boolean);if(!('IntersectionObserver' in window))return;var bar=document.querySelector('.links');function show(a){{links.forEach(function(x){{x.classList.remove('active')}});a.classList.add('active');if(bar.scrollWidth>bar.clientWidth){{var r=a.getBoundingClientRect(),c=bar.getBoundingClientRect();bar.scrollLeft+=(r.left-c.left)-(c.width-r.width)/2}}}}var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting)show(map[e.target.id])}})}},{{rootMargin:'-45% 0px -50% 0px'}});secs.forEach(function(x){{io.observe(x)}})}}catch(e){{}}}})();
+(function(){{try{{[].forEach.call(document.querySelectorAll('.tabs'),function(bar){{var tabs=[].slice.call(bar.querySelectorAll('[role=tab]')),panel=document.getElementById(bar.getAttribute('data-for'));if(!panel)return;var items=[].slice.call(panel.children);function pick(t){{tabs.forEach(function(b){{b.setAttribute('aria-selected',b===t?'true':'false');b.tabIndex=b===t?0:-1}});var f=t.getAttribute('data-f');items.forEach(function(q){{q.hidden=!(f==='all'||q.getAttribute('data-g')===f)}})}}tabs.forEach(function(b,i){{b.tabIndex=i===0?0:-1;b.addEventListener('click',function(){{pick(b)}});b.addEventListener('keydown',function(e){{var n=e.key==='ArrowRight'?i+1:e.key==='ArrowLeft'?i-1:-1;if(n<0)return;n=(n+tabs.length)%tabs.length;tabs[n].focus();pick(tabs[n]);e.preventDefault()}})}})}})}}catch(e){{}}}})();
 </script>
 </body>
 </html>
@@ -456,6 +541,7 @@ llms=f"""# Matt Lyman
 - LeanData: marketing's share of new business pipeline went from 18% to 50% while demand gen spend fell 41%.
 - Flosum: cost per paid MQL down 87% in six months; meetings from paid up 467%; monthly search impressions up 1,329% after an SEO and GEO/AEO rebuild.
 - Chef: revenue team grew about 2.7x through acquisition by Progress; SDR and BDR teams averaged 120%+ of quota.
+- Award: named a FINITE Influential 30 Marketer in B2B SaaS, 2023.
 - Community: founder of R.I.D.E. 4 ALL (inclusive recreation nonprofit); president of the Highline Special Needs PTA.
 
 ## Links
@@ -464,8 +550,8 @@ llms=f"""# Matt Lyman
 - [LinkedIn]({LI})
 - [R.I.D.E. 4 ALL](https://www.ride4all.org)
 
-## Talks and podcasts
-"""+"".join(f"- [{x['title']}]({x['url']}): {x['show']}, {x['year']}. {x['blurb']}\n" for x in episodes)
+## Talks, podcasts, and webinars
+"""+"".join(f"- [{x['title']}]({x['url']}): {x['show']}{(', '+x['role']) if x.get('role') else ''}{(', '+x['year']) if x['year'] else ''}. {x['blurb']}\n" for x in episodes)
 open(f"{OUT}/llms.txt","w").write(llms)
 open(f"{OUT}/favicon.svg","w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#F4C430"/><circle cx="32" cy="32" r="27" fill="#46605A"/><text x="32" y="41" font-family="Impact,Arial Narrow,sans-serif" font-size="26" text-anchor="middle" fill="#fff">ML</text></svg>\n')
 print("ok", len(page))
