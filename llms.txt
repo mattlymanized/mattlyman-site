@@ -1,6 +1,6 @@
 # Matt Lyman
 
-> B2B marketing leader based in Seattle with 15+ years in software, specializing in demand generation and marketing operations. Most recently VP of Marketing at Flosum. Open to VP and Head-of marketing roles.
+> B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation and marketing operations. Most recently VP of Marketing at Flosum. Open to VP and Head-of marketing roles.
 
 ## Summary
 - Roles: VP of Marketing at Flosum (Apr 2025 to Jun 2026); VP of Demand Generation at LeanData (Feb 2022 to Nov 2024); Director of Demand Generation at Chef Software (2015 to 2022, acquired by Progress).
@@ -16,6 +16,7 @@
 - [R.I.D.E. 4 ALL](https://www.ride4all.org)
 
 ## Talks and podcasts
+- [How can teams build trust to maintain consistent brand messaging?](https://podcasts.apple.com/us/podcast/how-can-teams-build-trust-to-maintain-consistent-brand/id1648953137?i=1000728017889): Straight To Voicemail, 2025. Why brand consistency is really about trust, and how documentation, transparent strategy, and feedback loops keep teams aligned.
 - [Welcome to the era of B2H](https://podcasts.apple.com/us/podcast/welcome-to-the-era-of-b2h-w-matt-lyman/id1747223698?i=1000723724993): Marketers of Technology, 2025. The B2H philosophy: even in B2B, you're selling to people, not companies.
 - [From Ops to Strategy: The Rise of a Marketing Generalist](https://podcasts.apple.com/us/podcast/from-ops-to-strategy-the-rise-of-a/id1772999666?i=1000699612652): Content Matters, 2025. How a path through theater, collections, and marketing ops shaped Matt's leadership, and why strong marketers understand both operations and creativity.
 - [Transforming CRM in financial services: LeanData's approach](https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach): Streamly, for Finovate, 2024. Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.

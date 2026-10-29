@@ -1,40 +1,66 @@
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /docs/
+Disallow: /tools/
 
 Sitemap: https://mattlyman.com/sitemap.xml
