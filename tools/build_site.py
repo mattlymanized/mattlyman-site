@@ -5,11 +5,12 @@ LI="https://www.linkedin.com/in/mattlyman"
 e=html.escape
 
 faq=[
-("Who is Matt Lyman?","Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation and marketing operations. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Demand Generation at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress."),
-("What does Matt Lyman do?","He is a B2B marketing leader who runs demand generation and marketing operations as one function. He has built demand engines across paid media, ABM, SEO, events, and content at Chef, LeanData, and Flosum."),
+("Who is Matt Lyman?","Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Revenue Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress."),
+("What does Matt Lyman do?","He is a B2B marketing leader who builds demand generation programs around buyer stories and the data to prove they work. He has built demand engines across paid media, ABM, SEO, events, and content at Chef, LeanData, and Flosum, and builds with AI every day."),
 ("What is B2H?","Business to human is Matt's approach to B2B marketing. Every campaign starts with a real story about who the buyer is and what they're afraid of, because a person makes the decision at the end of every enterprise deal."),
 ("What results has Matt driven?","At LeanData, marketing's share of new business pipeline went from 18% to 50% while demand gen spend fell 41%. At Flosum, cost per paid MQL fell 87% in six months and monthly search impressions grew 1,329%."),
 ("What is Matt's experience with ABM and GEO/AEO?","At Flosum, Matt ran ABM across 51 named accounts and 10 AEs. Target accounts clicked at 3 to 7x the campaign average, and 7 became opportunities within five months. He also led an SEO and GEO/AEO rebuild with 120+ assets updated, rebuilt FAQs, and third-party authority placements, which took monthly search impressions from 70,000 to over one million."),
+("How does Matt use AI?","Matt builds with AI every day. At Flosum he worked with product marketing on an agent that tracks competitor and industry news for Sales, built an ABM dashboard that pulls ad, intent, and site data into one view, set up an AI SDR, and rebuilt content for AI search (GEO/AEO)."),
 ("What roles is Matt open to?","Matt is open to VP, Head of, and Senior Director roles in marketing, demand generation, and growth at growth-stage B2B software companies."),
 ("What does Matt do outside of marketing?","He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA. He also rides bikes, a lot."),
 ("Where can I hear Matt talk about marketing and leadership?","Matt has been a guest on Marketers of Technology, Straight To Voicemail, Content Matters, The Hype Within, and Everything's Coming Up Marketing, and gave a Finovate talk on LeanData's revenue orchestration platform. Links to each are in the Talks and podcasts section of this page."),
@@ -45,11 +46,11 @@ faq_html="\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' 
 
 jsonld={"@context":"https://schema.org","@graph":[
  {"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"Matt Lyman","inLanguage":"en-US","publisher":{"@id":SITE+"/#person"}},
- {"@type":"ProfilePage","@id":SITE+"/#webpage","url":SITE+"/","name":"Matt Lyman | B2B Marketing Leader, Demand Generation and Marketing Ops","isPartOf":{"@id":SITE+"/#website"},"about":{"@id":SITE+"/#person"},"mainEntity":{"@id":SITE+"/#person"},"inLanguage":"en-US"},
- {"@type":"Person","@id":SITE+"/#person","name":"Matt Lyman","url":SITE+"/","image":SITE+"/images/matt-headshot.jpg","jobTitle":"B2B Marketing Leader","description":"B2B marketing leader with nearly 20 years in marketing, specializing in demand generation and marketing operations. Most recently VP of Marketing at Flosum.",
+ {"@type":"ProfilePage","@id":SITE+"/#webpage","url":SITE+"/","name":"Matt Lyman | B2B Marketing Leader, Demand Generation","isPartOf":{"@id":SITE+"/#website"},"about":{"@id":SITE+"/#person"},"mainEntity":{"@id":SITE+"/#person"},"inLanguage":"en-US"},
+ {"@type":"Person","@id":SITE+"/#person","name":"Matt Lyman","url":SITE+"/","image":SITE+"/images/matt-headshot.jpg","jobTitle":"B2B Marketing Leader","description":"B2B marketing leader with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. Most recently VP of Marketing at Flosum.",
   "address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA","addressCountry":"US"},
   "sameAs":[LI,"https://www.ride4all.org"],
-  "knowsAbout":["Demand generation","Marketing operations","Account-based marketing","Paid media","SEO","Generative engine optimization","Answer engine optimization","Marketo","HubSpot","Salesforce","Lead scoring","Marketing attribution","B2B SaaS marketing","Team leadership"],
+  "knowsAbout":["Demand generation","Marketing operations","Account-based marketing","Paid media","SEO","Generative engine optimization","Answer engine optimization","Marketo","HubSpot","Salesforce","Lead scoring","Marketing attribution","B2B SaaS marketing","Team leadership","AI agents for marketing","Generative AI"],
   "alumniOf":[
     {"@type":"Organization","name":"Flosum"},
     {"@type":"Organization","name":"LeanData"},
@@ -63,7 +64,7 @@ jsonld={"@context":"https://schema.org","@graph":[
 ]}
 ld=json.dumps(jsonld,indent=1,ensure_ascii=False)
 
-TITLE="Matt Lyman | B2B Marketing Leader, Demand Generation and Marketing Ops"
+TITLE="Matt Lyman | B2B Marketing Leader, Demand Generation"
 DESC="Marketing leader with nearly 20 years in marketing. Most recently VP of Marketing at Flosum. Seattle, remote."
 
 page=f'''<!doctype html>
@@ -110,8 +111,6 @@ a:hover{{color:var(--slate-dk)}}
 h1,h2,h3{{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase;color:var(--slate);margin:0}}
 h2{{font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin-bottom:.5em}}
 p{{margin:0 0 1em}}
-.top{{display:flex;justify-content:space-between;align-items:center;padding:18px 0}}
-.top .brand{{font:400 1.35rem Anton,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);text-decoration:none}}
 .btn{{display:inline-block;font:700 .95rem Montserrat,sans-serif;padding:.8em 1.4em;border-radius:999px;text-decoration:none;border:2px solid var(--slate);transition:transform .15s,background .15s}}
 .btn:hover{{transform:translateY(-2px)}}
 .btn.primary{{background:var(--slate);color:#fff}}
@@ -119,6 +118,20 @@ p{{margin:0 0 1em}}
 .btn.ghost{{background:transparent;color:var(--slate)}}
 .btn.ghost:hover{{background:#fff}}
 .pill{{display:inline-block;background:var(--yellow);color:var(--slate-dk);font:700 .85rem Montserrat,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:.45em 1.1em;border-radius:999px}}
+.nav{{position:sticky;top:0;z-index:50;background:rgba(246,247,245,.93);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}}
+.navin{{display:flex;align-items:center;gap:18px;padding-top:10px;padding-bottom:10px}}
+.nav .brand{{font:400 1.3rem Anton,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);text-decoration:none;white-space:nowrap}}
+.links{{display:flex;gap:2px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}}
+.links::-webkit-scrollbar{{display:none}}
+.links a{{display:block;padding:.45em .85em;border-radius:999px;font:600 .85rem Montserrat,sans-serif;color:var(--ink);text-decoration:none;white-space:nowrap}}
+.links a:hover{{background:#fff}}
+.links a.active{{background:var(--yellow);color:var(--slate-dk)}}
+.nav .btn{{padding:.5em 1.1em;font-size:.85rem;white-space:nowrap}}
+section{{scroll-margin-top:62px}}
+.skl{{margin:0;display:grid;gap:16px}}
+.skl dt{{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}}
+.skl dd{{margin:.15em 0 0;font-size:1rem;line-height:1.65}}
+@media (max-width:820px){{.navin{{flex-wrap:wrap;gap:6px 12px}}.nav .btn{{margin-left:auto}}.links{{order:3;width:100%;margin:0}}section{{scroll-margin-top:100px}}}}
 /* hero */
 .hero{{position:relative;overflow:hidden;padding:20px 0 56px}}
 .hero:before,.hero:after{{content:"";position:absolute;background:#fff;border-radius:50%;z-index:0}}
@@ -206,13 +219,22 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 @media (prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}.btn{{transition:none}}}}
 </style>
 </head>
-<body>
-<div class="wrap">
- <div class="top">
-  <a class="brand" href="/">Matt Lyman</a>
+<body id="top">
+<nav class="nav" aria-label="Page sections">
+ <div class="wrap navin">
+  <a class="brand" href="#top">Matt Lyman</a>
+  <ul class="links">
+   <li><a href="#about">About</a></li>
+   <li><a href="#proof">Work</a></li>
+   <li><a href="#community">Community</a></li>
+   <li><a href="#talks">Talks</a></li>
+   <li><a href="#people">Testimonials</a></li>
+   <li><a href="#skills">Skills</a></li>
+   <li><a href="#faq">FAQ</a></li>
+  </ul>
   <a class="btn ghost" href="{LI}" rel="me noopener">LinkedIn</a>
  </div>
-</div>
+</nav>
 
 <header class="hero">
  <div class="wrap">
@@ -220,7 +242,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
    <div>
     <span class="pill">B2B marketing leader</span>
     <h1>Matt Lyman</h1>
-    <p class="sub">Demand gen and marketing ops, run as one function.</p>
+    <p class="sub">Demand generation built on stories buyers believe and numbers Sales trusts.</p>
     <p>I fix pipeline. Not by throwing more budget at the top of the funnel, but by finding where it's actually broken: conversion rates, messaging that doesn't land, content that doesn't move buyers, and handoffs between Marketing, Sales, and Customer Success that leak revenue at every stage. Most recently VP of Marketing at Flosum. Seattle, remote.</p>
     <p class="community-line">Founder, R.I.D.E. 4 ALL. President, Highline Special Needs PTA.</p>
     <div class="cta">
@@ -251,10 +273,11 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
  <div class="wrap about">
   <div>
    <h2>About</h2>
-   <p class="lead">Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation and marketing operations. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Demand Generation at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA.</p>
-   <p>I dig into the data, review customer calls, and talk to the people who said yes and the ones who said no, then build programs around what I find. Across nearly 20 years in marketing, I've built demand engines at Chef, LeanData, and Flosum across paid media, ABM, SEO, events, and content.</p>
-   <p>Before software, I ran sales and marketing for a craft beer publication. I also have a degree in playwriting, and it shows. Every campaign I build starts with a story, a real one, about who the buyer is, what they're afraid of, and what changes if they solve the problem. I call it B2H, business to human, because at the end of every enterprise deal is a person making a decision. At Flosum, that meant scrapping product-first messaging and rebuilding the strategic narrative from the ground up.</p>
-   <p>The way I work: demand gen and ops as one function, not two. Clean infrastructure, reliable attribution, and pipeline numbers that Sales actually believes. I lead from alongside, not above. My job as a leader is to coach my team well enough that they can take my job, and then go find a bigger one.</p>
+   <p class="lead">Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Revenue Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA.</p>
+   <p>I review customer calls, talk to the people who said yes and the ones who said no, and build programs around what I find. Nearly 20 years in marketing, most recently at Chef, LeanData, and Flosum. At LeanData, marketing's share of new business pipeline went from 18% to 50% while demand gen spend dropped 41%. At Flosum, cost per paid MQL fell 87% in six months and monthly search impressions grew from 70,000 to over a million.</p>
+   <p>Before software, I ran sales and marketing for a craft beer publication. I also have a degree in playwriting, and it shows. Every campaign I build starts with a story, a real one, about who the buyer is, what they're afraid of, and what changes if they solve the problem. I call it B2H, business to human, because at the end of every enterprise deal is a person making a decision. At Flosum, that meant scrapping product-first messaging and rebuilding the strategic narrative from the ground up. Then I make sure the numbers behind it are ones Sales believes.</p>
+   <p>I build with AI every day. At Flosum I worked with product marketing on an agent that tracks competitor and industry news and hands Sales what changed, built an ABM dashboard that pulled ad, intent, and site data into one view across 51 accounts, set up our AI SDR, and rebuilt our content for AI search.</p>
+   <p>I lead from alongside, not above. My job is to coach my team well enough that they can take my job and go find a bigger one.</p>
   </div>
   <figure class="photo-fig">
    <div class="photo"><img src="/images/matt-cycling.jpg" width="900" height="1200" loading="lazy" alt="Matt Lyman in a yellow cycling jersey and blue helmet, riding into low sun"></div>
@@ -276,6 +299,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
      <li>Meetings from paid up 467%.</li>
      <li>Monthly search impressions went from 70,000 to over one million, up 1,329%, through the SEO and GEO/AEO rebuild: 120+ assets updated, FAQ rebuilds, third-party authority placements.</li>
      <li>ABM across 51 named accounts and 10 AEs. Target accounts clicked at 3 to 7x the campaign average, and 7 became opportunities within five months, mostly through BDR meetings.</li>
+     <li>Built an agent with product marketing that tracks competitor and industry news and hands Sales what changed, and an ABM dashboard that pulls ad, intent, and site data into one view. Also set up the AI SDR.</li>
     </ul>
    </article>
    <article class="role">
@@ -292,7 +316,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
    </article>
    <article class="role">
     <header><h3>Chef Software</h3><span class="when">2015 to 2022</span></header>
-    <p class="title">Director of Demand Generation at exit</p>
+    <p class="title">Director of Revenue Marketing at exit</p>
     <p class="scope">Ran demand gen, ops, web, and SDR teams. Team of 7. Joined the business unit leadership team after Progress acquired Chef.</p>
     <ul>
      <li>Revenue team grew about 2.7x through the acquisition, with quarterly pipeline goals beaten by 4x or more.</li>
@@ -357,8 +381,11 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 <section id="skills" class="alt">
  <div class="wrap skills">
   <h2>Skills and tools</h2>
-  <p>Marketing leadership, demand generation, marketing operations, ABM, paid media, SEO and GEO/AEO, messaging and narrative, lifecycle and lead scoring, attribution, sales and BDR alignment, product and category launches, events.</p>
-  <p class="small">Marketo, HubSpot, Eloqua, Pardot, Salesforce, LeanData, Qualified, Outreach, Salesloft, Demandbase, 6sense, UserGems, Intellimize. MBA, Global Marketing Management. Six Sigma Green Belt. Franklin Covey and Dale Carnegie leadership training.</p>
+  <dl class="skl">
+   <div><dt>Focus</dt><dd>Marketing leadership, demand generation, ABM, paid media, SEO and GEO/AEO, AI workflows and agents, messaging and narrative, lifecycle and lead scoring, attribution, marketing operations, sales and BDR alignment, product and category launches, events.</dd></div>
+   <div><dt>Tools</dt><dd>Marketo, HubSpot, Eloqua, Pardot, Salesforce, LeanData, Qualified, Outreach, Salesloft, Demandbase, 6sense, UserGems, Intellimize, Claude, ChatGPT.</dd></div>
+   <div><dt>Training</dt><dd>MBA, Global Marketing Management. Six Sigma Green Belt. Franklin Covey and Dale Carnegie leadership training.</dd></div>
+  </dl>
  </div>
 </section>
 
@@ -384,6 +411,9 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 </section>
 
 <footer><div class="wrap">&copy; 2026 Matt Lyman. Seattle, WA.</div></footer>
+<script>
+(function(){{try{{var links=[].slice.call(document.querySelectorAll('.links a')),map={{}};links.forEach(function(a){{map[a.getAttribute('href').slice(1)]=a}});var secs=Object.keys(map).map(function(id){{return document.getElementById(id)}}).filter(Boolean);if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{links.forEach(function(a){{a.classList.remove('active')}});map[e.target.id].classList.add('active')}}}})}},{{rootMargin:'-45% 0px -50% 0px'}});secs.forEach(function(x){{io.observe(x)}})}}catch(e){{}}}})();
+</script>
 </body>
 </html>
 '''
@@ -399,10 +429,10 @@ open(f"{OUT}/robots.txt","w").write(robots)
 open(f"{OUT}/sitemap.xml","w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n <url><loc>{SITE}/</loc><lastmod>2026-10-29</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>\n</urlset>\n')
 llms=f"""# Matt Lyman
 
-> B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation and marketing operations. Most recently VP of Marketing at Flosum. Open to VP and Head-of marketing roles.
+> B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. Most recently VP of Marketing at Flosum. Open to VP and Head-of marketing roles.
 
 ## Summary
-- Roles: VP of Marketing at Flosum (Apr 2025 to Jun 2026); VP of Demand Generation at LeanData (Feb 2022 to Nov 2024); Director of Demand Generation at Chef Software (2015 to 2022, acquired by Progress).
+- Roles: VP of Marketing at Flosum (Apr 2025 to Jun 2026); VP of Demand Generation at LeanData (Feb 2022 to Nov 2024); Director of Revenue Marketing at Chef Software (2015 to 2022, acquired by Progress).
 - LeanData: marketing's share of new business pipeline went from 18% to 50% while demand gen spend fell 41%.
 - Flosum: cost per paid MQL down 87% in six months; meetings from paid up 467%; monthly search impressions up 1,329% after an SEO and GEO/AEO rebuild.
 - Chef: revenue team grew about 2.7x through acquisition by Progress; SDR and BDR teams averaged 120%+ of quota.
