@@ -272,7 +272,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 
   <figure class="pull">
    <blockquote>&ldquo;Matt's leadership style is one of empowerment. He sets the culture and direction and has allowed me to go take risks without the fear of failure. I have grown so much under his leadership.&rdquo;</blockquote>
-   <cite>Direct report</cite>
+   <cite>Chengxin Tan, Director, Demand Generation, Ivo. Direct report.</cite>
   </figure>
  </div>
 </header>
