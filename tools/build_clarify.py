@@ -55,23 +55,24 @@ li{margin:0 0 .55em}
 @page{size:Letter;margin:.45in .5in}
 .foot-print{display:none}
 @media print{
- body{background:#fff;font-size:9.4pt;line-height:1.38}
+ body{background:#fff;font-size:8.9pt;line-height:1.32}
+ .ideas-sec h2{font-size:12pt;margin:2px 0 0}
  .nav,.read-sec,.see-sec,.q-sec,.foot-screen,.dl{display:none}
  .hero{padding:0 0 4px;border-bottom:3px solid var(--yellow);margin-bottom:6px}
- h1{font-size:30pt;margin:.15em 0 .05em}
+ h1{font-size:26pt;margin:.15em 0 .05em}
  .byline{font-size:8.6pt;margin:0 0 4px}
  .lead{font-size:9.2pt;max-width:none;margin:4px 0 0}
  .wrap{max-width:none;padding:0}
  section{padding:0}
  h3{font-size:13pt;margin-bottom:3px}
  .num{width:22px;height:22px;font-size:11pt}
- .idea{border-radius:8px;padding:7px 11px;margin:0 0 7px;break-inside:avoid}
+ .idea{border-radius:8px;padding:6px 10px;margin:0 0 5px;break-inside:avoid}
  .idea p{margin:0 0 4px}
- .tight{margin:0 0 4px;font-size:8.8pt}
+ .tight{margin:0 0 3px;font-size:8.4pt}
  .tight li{margin:0 0 1px}
- .rows{font-size:8.4pt}
- .rows th{width:100px;padding:3px 7px;font-size:6.8pt}
- .rows td{padding:3px 7px}
+ .rows{font-size:8pt}
+ .rows th{width:100px;padding:2px 7px;font-size:6.8pt}
+ .rows td{padding:2px 7px}
  .next{margin:6px 0 2px;font-size:9.6pt}
  .foot-print{display:block;font-size:7.4pt;color:var(--muted);margin:0}
 }
@@ -98,19 +99,19 @@ page = f"""<!DOCTYPE html>
 <h1>{e(c['title'])}</h1>
 <p class="byline">{e(c['byline'])}</p>
 <p class="dl"><a href="/clarify/Three-Ideas-for-Clarify.pdf" download>Download the one-page PDF</a></p>
-<p class="lead">{e(c['intro'])}</p>
 </div></header>
 <main>
-<section class="read-sec"><div class="wrap"><h2>The read</h2><p class="lead">{e(c['read'])}</p></div></section>
-<section class="see-sec"><div class="wrap"><h2>What I can see from outside</h2>
+<section class="read-sec"><div class="wrap"><h2>My Read</h2><p class="lead">{e(c['read'])}</p></div></section>
+<section class="see-sec"><div class="wrap"><h2>My quick read from the outside</h2>
 <div class="two"><div class="card"><h3>Areas of strength</h3><ul>{li(c['strengths'])}</ul></div>
 <div class="card"><h3>Areas for growth</h3><ul>{li(c['growth'])}</ul></div></div></div></section>
-<section class="ideas-sec"><div class="wrap"><h2>Three ideas for the first 90 days</h2>
+<section class="ideas-sec"><div class="wrap"><h2>Three Ideas for the First 90 Days</h2>
+<p class="lead ideas-intro">{e(c['ideas_intro'])}</p>
 {''.join(idea(i) for i in c['ideas'])}
 <p class="next">{e(c['next'])}</p>
 <p class="foot-print">{e(c['footnote'])}</p>
 </div></section>
-<section class="q-sec"><div class="wrap"><h2>What I would need to know</h2><ul>{li(c['questions'])}</ul></div></section>
+<section class="q-sec"><div class="wrap"><h2>What I would need to know</h2><p class="lead">{e(c['questions_intro'])}</p><ul>{li(c['questions'])}</ul></div></section>
 </main>
 <footer class="foot-screen"><div class="wrap foot"><p>{e(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p></div></footer>
 </body>
