@@ -78,11 +78,18 @@ li{margin:0 0 .55em}
 }
 """
 
+GTM_ID="GTM-MXXRBLHC"
+_EEA="AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH".split()
+GTM_HEAD=("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}"
+ "gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','region':"+str(_EEA)+"});</script>\n"
+ "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','"+GTM_ID+"');</script>")
+GTM_BODY='<noscript><iframe src="https://www.googletagmanager.com/ns.html?id='+GTM_ID+'" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'
 page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{GTM_HEAD}
 <title>{e(c['title'])} | Matt Lyman</title>
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="description" content="A short read on Clarify and three ideas for its first 90 days, prepared for Patrick Thompson.">
@@ -93,6 +100,7 @@ page = f"""<!DOCTYPE html>
 <style>{css}</style>
 </head>
 <body>
+{GTM_BODY}
 <nav class="nav"><div class="wrap navin"><a class="brand" href="/">Matt Lyman</a><a class="btn" href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></div></nav>
 <header class="hero"><div class="wrap">
 <span class="pill">{e(c['pill'])}</span>
@@ -113,7 +121,7 @@ page = f"""<!DOCTYPE html>
 </div></section>
 <section class="q-sec"><div class="wrap"><h2>What I would need to know</h2><p class="lead">{e(c['questions_intro'])}</p><ul>{li(c['questions'])}</ul></div></section>
 </main>
-<footer class="foot-screen"><div class="wrap foot"><p>{e(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p></div></footer>
+<footer class="foot-screen"><div class="wrap foot"><p>{e(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p><p>This page uses Google Analytics to count visits.</p></div></footer>
 </body>
 </html>
 """
