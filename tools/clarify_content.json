@@ -1,68 +1,96 @@
 {
-  "title": "A read on Clarify",
-  "pill": "For Patrick Thompson",
-  "byline": "Matt Lyman. Nov 11, 2026. Built from public information.",
-  "intro": "Each idea below is cheap, fast and measurable, so the first quarter produces numbers the Series B conversation can use. The open questions are the things only you can answer.",
-  "read": "Clarify is shipping fast. Agents reached general availability in June, the API went public in July, Seam joined on July 21, and Signals is next. The product story is moving faster than the demand behind it, and that gap is what I would work on.",
-  "strengths": [
-    "Shipping pace: Agents in general availability in June, a public API in July, Seam closed July 21, Signals next.",
-    "Customer proof: 15 customer stories and about 25 named quotes, several with numbers.",
-    "Comparison coverage: vs pages for nine tools, plus \"best alternatives\" posts.",
-    "Built for AI search and easy trial: AI crawlers allowed, an llms.txt, and a free tier with unlimited seats."
-  ],
-  "growth": [
-    "Ranking, not coverage. Semrush estimates put the startups CRM post at #39 for \"crm for startups,\" and I found no top-100 rankings for \"hubspot alternatives\" or \"salesforce alternatives.\" Worth a live check.",
-    "Rival comparisons. I could not find pages for Day.ai or Coffee.",
-    "Larger names. Most customer stories are small teams and founders. Seam's customers could add recognizable ones.",
-    "Pricing consistency. Some third-party pages still show old Clarify prices."
-  ],
-  "ideas": [
-    {
-      "n": 1,
-      "title": "Data Rot Score",
-      "body": "A free tool. Someone uploads a CRM export and gets a score in minutes: stale contacts, duplicates, missing owners, empty fields, dead domains. The five biggest fixes show on screen, the full report goes by email, and \"fix it in Clarify\" imports the cleaned data into the free tier. Searches for CRM data fixes are small (about 1,700 a month in total), so this is about leads and links, not search traffic. It reaches people who have never heard of Clarify, and every score gives outbound something specific to say.",
-      "bullets": [],
-      "rows": [
-        ["First move", "Ship version one in about three weeks: scoring job, one landing page, a three-email follow-up."],
-        ["We would know", "Uploads scored, score to import, import to paid within 60 days. Targets set after two weeks of baseline."],
-        ["Open question", "Is CSV import ready, and can an engineer spare three weeks? Files would be deleted after scoring."]
-      ]
-    },
-    {
-      "n": 2,
-      "title": "Win the searches buyers actually use",
-      "body": "Clarify already has the pages. Most sit on page two or lower, so the work is moving what exists before writing more. Five targets, from Semrush estimates of US searches a month:",
-      "bullets": [
-        "crm for startups: 1,600 (difficulty 40 of 100). Clarify's post is #39, Attio is #9.",
-        "Small-business CRM terms: about 2,800 combined and easy to rank. Coffee is #2 with one article.",
-        "Best MCP servers for sales and marketing: 2,400. Clarify has its own MCP server to back it up.",
-        "Day.ai: 6,600, worth checking what the results really show. Coffee is #5 with a comparison page.",
-        "Best AI CRM: about 2,300 across three terms. Harder, so a longer play."
-      ],
-      "rows": [
-        ["First move", "Start with \"crm for startups\": find out which of Clarify's startup CRM pages Google prefers, then merge or point the others at it. Next, one small-business CRM page and an MCP servers guide."],
-        ["We would know", "Rank and clicks for the five terms, signups from those pages, and whether AI answers cite them."],
-        ["Open question", "Which page should own each term, and can I see Search Console?"]
-      ]
-    },
-    {
-      "n": 3,
-      "title": "The Seam and Signals launch",
-      "body": "Seam's customers were put on hold while Signals is built, and many said they plan to move to Clarify. Make them the first Signals beta: a dated offer, a named owner per account, and a short weekly update until Signals ships. Seam's product sat alongside a team's existing CRM, so these accounts could also be the first proof that Clarify works next to Salesforce or HubSpot as well as in place of them. Seam sold to marketing ops and demand gen buyers too, so Signals may open a second audience beyond sales teams.",
-      "bullets": [],
-      "rows": [
-        ["First move", "List every Seam account and its status this week. Write the migration offer and a launch page that Signals can slot into."],
-        ["We would know", "Seam accounts moved, time from offer to live, and how many become Signals references."],
-        ["Open question", "How many Seam customers have moved so far, when does Signals ship, and who owns the migration?"]
-      ]
-    }
-  ],
-  "questions": [
-    "What do the funnel numbers look like from signup to paid?",
-    "Who owns pricing and the Seam migration?",
-    "When does Signals ship, and what is live until then?",
-    "Is Clarify meant to be the system of record, or also to work next to a team's existing CRM?"
-  ],
-  "next": "Next step: tell me which of the three is worth a closer look and I will send a short plan by Friday.",
-  "footnote": "Search figures are Semrush estimates for US searches, checked Nov 11, 2026. Customer and comparison counts are from clarify.ai on the same date. Seam details are from GeekWire's coverage of the deal."
+ "title": "A read on Clarify",
+ "pill": "For Patrick Thompson",
+ "byline": "Matt Lyman. Nov 11, 2026. Built from public information.",
+ "read": "Clarify is shipping fast. Agents reached general availability in June, the API went public in July, Seam joined on July 21, and Signals is next. The product story is moving faster than the demand behind it, and that gap is where I excel.",
+ "strengths": [
+  "Shipping pace: Agents in general availability in June, a public API in July, Seam closed July 21, Signals next.",
+  "Customer proof: 15 customer stories and about 25 named quotes, several with numbers.",
+  "Comparison coverage: vs pages for nine tools, plus \"best alternatives\" posts.",
+  "Built for AI search and easy trial: AI crawlers allowed, an llms.txt, and a free tier with unlimited seats."
+ ],
+ "growth": [
+  "Ranking, not coverage. Semrush estimates put the startups CRM post at #39 for \"crm for startups,\" and I found no top-100 rankings for \"hubspot alternatives\" or \"salesforce alternatives.\" Worth a live check.",
+  "Rival comparisons. I could not find pages for Day.ai or Coffee.",
+  "Larger names. Most customer stories are small teams and founders. Seam's customers could add recognizable ones.",
+  "Pricing consistency. Some third-party pages still show old Clarify prices."
+ ],
+ "ideas": [
+  {
+   "n": 1,
+   "title": "Data Rot Score",
+   "body": "A free tool. Someone uploads a CRM export and gets a score in minutes: stale contacts, duplicates, missing owners, empty fields, dead domains. The five biggest fixes show on screen, the full report goes by email, and \"fix it in Clarify\" imports the cleaned data into the free tier. Searches for CRM data fixes are small (about 1,700 a month in total), so this is about leads and links, not search traffic. It reaches people who have never heard of Clarify, and every score gives outbound something specific to say.",
+   "bullets": [],
+   "rows": [
+    [
+     "First move",
+     "Ship version one in about three weeks: scoring job, one landing page, a three-email follow-up."
+    ],
+    [
+     "We would know",
+     "Uploads scored, score to import, import to paid within 60 days. Targets set after two weeks of baseline."
+    ],
+    [
+     "Open question",
+     "Is CSV import ready, and can an engineer spare three weeks? Files would be deleted after scoring."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Win the searches buyers actually use",
+   "body": "Clarify already has the pages. Most sit on page two or lower, so the work is moving what exists before writing more. Five targets, from Semrush estimates of US searches a month:",
+   "bullets": [
+    "crm for startups: 1,600 (difficulty 40 of 100). Clarify's post is #39, Attio is #9.",
+    "Small-business CRM terms: about 2,800 combined and easy to rank. Coffee is #2 with one article.",
+    "Best MCP servers for sales and marketing: 2,400. Clarify has its own MCP server to back it up.",
+    "Day.ai: 6,600, worth checking what the results really show. Coffee is #5 with a comparison page.",
+    "Best AI CRM: about 2,300 across three terms. Harder, so a longer play."
+   ],
+   "rows": [
+    [
+     "First move",
+     "Start with \"crm for startups\": find out which of Clarify's startup CRM pages Google prefers, then merge or point the others at it. Next, one small-business CRM page and an MCP servers guide."
+    ],
+    [
+     "We would know",
+     "Rank and clicks for the five terms, signups from those pages, and whether AI answers cite them."
+    ],
+    [
+     "Open question",
+     "Which page should own each term, and can I see Search Console?"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "title": "The Seam and Signals launch",
+   "body": "This will be a big splash, as it adds a great amount of flexibility and functionality to the Clarify stack. We would want to build a larger plan for launch in general (press releases, email strings, ads, guerrilla-style near Dreamforce and Inbound), but this is a specific thing we need to do during the lead-up. Seam's customers were put on hold while Signals is built, and many said they plan to move to Clarify. Make them the first Signals beta: a dated offer, a named owner per account, and a short weekly update until Signals ships. Seam's product sat alongside a team's existing CRM, so these accounts could also be the first proof that Clarify works next to Salesforce or HubSpot as well as in place of them. Seam sold to marketing ops and demand gen buyers too, so Signals may open a second audience beyond sales teams.",
+   "bullets": [],
+   "rows": [
+    [
+     "First move",
+     "List every Seam account and its status this week. Write the migration offer and a launch page that Signals can slot into."
+    ],
+    [
+     "We would know",
+     "Seam accounts moved, time from offer to live, and how many become Signals references."
+    ],
+    [
+     "Open question",
+     "How many Seam customers have moved so far, when does Signals ship, and who owns the migration?"
+    ]
+   ]
+  }
+ ],
+ "questions": [
+  "What do the funnel numbers look like from signup to paid?",
+  "Who owns pricing and the Seam migration?",
+  "When does Signals ship, and what is live until then?",
+  "Is Clarify meant to be the system of record, or also to work next to a team's existing CRM?"
+ ],
+ "next": "Next step: tell me which of the three is worth a closer look and I will send a short plan by Friday.",
+ "footnote": "Search figures are Semrush estimates for US searches, checked Nov 11, 2026. Customer and comparison counts are from clarify.ai on the same date. Seam details are from GeekWire's coverage of the deal.",
+ "ideas_intro": "Each idea below is cheap, fast and measurable, so the first quarter produces numbers the Series B conversation can use.",
+ "questions_intro": "These are the things only you can answer."
 }
