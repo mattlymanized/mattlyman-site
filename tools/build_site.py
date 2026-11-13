@@ -495,7 +495,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
    <div><dt>ABM and sales</dt><dd>LeanData, Qualified, Outreach, Salesloft, Demandbase, 6sense, UserGems, Intellimize.</dd></div>
    <div><dt>AI and build</dt><dd>Claude, ChatGPT, GitHub.</dd></div>
    <div><dt>Project management</dt><dd>Jira, Notion, Asana, Airtable.</dd></div>
-   <div><dt>Certifications</dt><dd>LinkedIn Advertising Fundamentals (2026). Pavilion Customer-Centric Growth (2025). Demandbase Account-Based GTM (2025). 6sense Fundamentals of Next-Gen Marketing (2025). Marketing Psychology and Consumer Behavior (2025). Six Sigma Green Belt.</dd></div>
+   <div><dt>Certifications</dt><dd>Pavilion AI in GTM School (2026). LinkedIn Advertising Fundamentals (2026). Pavilion Customer-Centric Growth (2025). Demandbase Account-Based GTM (2025). 6sense Fundamentals of Next-Gen Marketing (2025). Marketing Psychology and Consumer Behavior (2025). Six Sigma Green Belt.</dd></div>
    <div><dt>Training</dt><dd>MBA, Global Marketing Management. Franklin Covey and Dale Carnegie leadership training.</dd></div>
   </dl>
  </div>
