@@ -9,11 +9,9 @@ e = html.escape
 def li(items):
     return "".join(f"<li>{e(i)}</li>" for i in items)
 
-def idea(i):
-    bullets = f"<ul class=\"tight\">{li(i['bullets'])}</ul>" if i["bullets"] else ""
-    rows = "".join(f"<tr><th>{e(a)}</th><td>{e(b)}</td></tr>" for a, b in i["rows"])
+def step(i):
     return (f"<article class=\"idea\"><h3><span class=\"num\">{i['n']}</span>{e(i['title'])}</h3>"
-            f"<p>{e(i['body'])}</p>{bullets}<table class=\"rows\">{rows}</table></article>")
+            f"<p>{e(i['body'])}</p></article>")
 
 css = """
 :root{--slate:#46605A;--slate-dk:#2F433E;--ink:#22302D;--muted:#5E6B68;--yellow:#F4C430;--yellow-soft:#FBE9A6;--bg:#F6F7F5;--card:#FFFFFF;--line:#E3E7E4}
@@ -56,7 +54,7 @@ li{margin:0 0 .55em}
 .foot-print{display:none}
 @media print{
  body{background:#fff;font-size:8.9pt;line-height:1.32}
- .ideas-sec h2{font-size:12pt;margin:2px 0 0}
+ .steps-sec h2{font-size:12pt;margin:2px 0 0}
  .nav,.read-sec,.see-sec,.q-sec,.foot-screen,.dl{display:none}
  .hero{padding:0 0 4px;border-bottom:3px solid var(--yellow);margin-bottom:6px}
  h1{font-size:26pt;margin:.15em 0 .05em}
@@ -92,7 +90,7 @@ page = f"""<!DOCTYPE html>
 {GTM_HEAD}
 <title>{e(c['title'])} | Matt Lyman</title>
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="A short read on Clarify and three ideas for its first 90 days, prepared for Patrick Thompson.">
+<meta name="description" content="A short read on Clarify, prepared for Patrick Thompson.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,20 +104,18 @@ page = f"""<!DOCTYPE html>
 <span class="pill">{e(c['pill'])}</span>
 <h1>{e(c['title'])}</h1>
 <p class="byline">{e(c['byline'])}</p>
-<p class="dl"><a href="/clarify/Three-Ideas-for-Clarify.pdf" download>Download the one-page PDF</a></p>
 </div></header>
 <main>
-<section class="read-sec"><div class="wrap"><h2>My Read</h2><p class="lead">{e(c['read'])}</p></div></section>
-<section class="see-sec"><div class="wrap"><h2>My quick read from the outside</h2>
-<div class="two"><div class="card"><h3>Areas of strength</h3><ul>{li(c['strengths'])}</ul></div>
-<div class="card"><h3>Areas for growth</h3><ul>{li(c['growth'])}</ul></div></div></div></section>
-<section class="ideas-sec"><div class="wrap"><h2>Three Ideas for the First 90 Days</h2>
-<p class="lead ideas-intro">{e(c['ideas_intro'])}</p>
-{''.join(idea(i) for i in c['ideas'])}
+<section class="read-sec"><div class="wrap"><h2>My read</h2><p class="lead">{e(c['read'])}</p></div></section>
+<section class="see-sec"><div class="wrap"><h2>What's working</h2>
+<div class="card"><ul>{li(c['strengths'])}</ul></div></div></section>
+<section class="steps-sec"><div class="wrap"><h2>Where I'd start</h2>
+<p class="lead steps-intro">{e(c['steps_intro'])}</p>
+{''.join(step(i) for i in c['steps'])}
 <p class="next">{e(c['next'])}</p>
 <p class="foot-print">{e(c['footnote'])}</p>
 </div></section>
-<section class="q-sec"><div class="wrap"><h2>What I would need to know</h2><p class="lead">{e(c['questions_intro'])}</p><ul>{li(c['questions'])}</ul></div></section>
+<section class="q-sec"><div class="wrap"><h2>Open questions</h2><p class="lead">{e(c['questions_intro'])}</p><ul>{li(c['questions'])}</ul></div></section>
 </main>
 <footer class="foot-screen"><div class="wrap foot"><p>{e(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p><p>This page uses Google Analytics to count visits.</p></div></footer>
 </body>
