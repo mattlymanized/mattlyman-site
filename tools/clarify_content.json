@@ -5,27 +5,39 @@
  "read": "Clarify's customers say better things about it than its marketing does. The G2 reviews are the strongest in the category and the customer stories carry real numbers, and almost none of that shows up where buyers are actually looking. The homepage talks to founders, reps, sales leaders, ops and growth at once, so it speaks to all of them and lands on none. That sits upstream of every channel decision, which is why it's where I'd start.",
  "strengths": [
   "The G2 reviews. The best proof asset Clarify has, and the least used.",
+  "The HubSpot and Salesforce connectors. Clarify is the only one of the five that can run alongside a team's existing CRM, which turns switching into a low-risk decision instead of a rip and replace.",
   "15 customer stories and about 25 named quotes, several with numbers in them.",
   "Comparison pages for nine tools, plus the alternatives posts. The structure is already built.",
   "Advocacy is already running. You three times over, plus customers and partners posting. That is hard to start, and it exists.",
   "Built for AI search and easy trial: AI crawlers allowed, an llms.txt, and a free tier with unlimited seats."
  ],
  "steps": [
-  {"n": 1, "title": "Decide who this is for",
-   "body": "One buyer, one trigger, one story, and a homepage that says it. Everything below this depends on it, and none of it is worth much without it."},
-  {"n": 2, "title": "Put the proof where buyers look",
-   "body": "The reviews and the customer numbers go onto the comparison pages, into the advocacy posts, and onto the pages people actually search. Right now the proof and the distribution exist separately from each other."},
-  {"n": 3, "title": "Move the pages that almost rank",
-   "body": "Semrush estimates put the startups CRM post around #39 for \"crm for startups.\" Merge the duplicates and fix what already exists before writing anything new. Worth a check against Search Console first."},
-  {"n": 4, "title": "Build one thing for people who have never heard of Clarify",
-   "body": "Data Rot Score: upload a CRM export, get a score back on stale contacts, duplicates, missing owners, empty fields and dead domains, then import the cleaned data into the free tier. Search volume here is small, so this is about leads and links rather than traffic."}
+  {
+   "n": 1,
+   "title": "Make the site say who it's for",
+   "body": "One buyer, one trigger, one story, and a homepage that says it. The category label can be settled after. The homepage can't wait for it."
+  },
+  {
+   "n": 2,
+   "title": "Put the proof where buyers look",
+   "body": "The reviews and the customer numbers go onto the comparison pages, into the advocacy posts, and onto the pages people actually search. Right now the proof and the distribution exist separately from each other."
+  },
+  {
+   "n": 3,
+   "title": "Move the pages that almost rank",
+   "body": "Semrush estimates put the startups CRM post around #39 for \"crm for startups.\" Merge the duplicates and fix what already exists before writing anything new. Worth a check against Search Console first."
+  },
+  {
+   "n": 4,
+   "title": "Build one thing for people who have never heard of Clarify",
+   "body": "Data Rot Score: upload a CRM export, get a score back on stale contacts, duplicates, missing owners, empty fields and dead domains, then import the cleaned data into the free tier. Search volume here is small, so this is about leads and links rather than traffic."
+  }
  ],
  "questions": [
-  "Is Clarify the system of record, or does it work alongside a team's existing CRM?",
   "Who owns pricing?",
-  "What is live between now and Signals?"
+  "Lightfield runs a comparison page against Clarify and Google's AI answers lean on it. Answer it directly, or stay out of it?"
  ],
- "next": "Next step: tell me which part you want to go deeper on and I'll put a plan behind it.",
+ "next": "Next step: the detailed plan behind this isn't public. Ask and I'll send it.",
  "footnote": "Search figures are Semrush estimates for US searches, checked Nov 17, 2026. Customer and comparison counts are from clarify.ai on the same date.",
  "steps_intro": "In order. Each one makes the next one cheaper.",
  "questions_intro": "These are the things only you can answer."
