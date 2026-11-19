@@ -1,44 +1,70 @@
 {
  "title": "A read on Clarify",
- "pill": "For Patrick Thompson",
- "byline": "Matt Lyman. Nov 17, 2026. Built from public information.",
- "read": "Clarify's customers say better things about it than its marketing does. The G2 reviews are the strongest in the category and the customer stories carry real numbers, and almost none of that shows up where buyers are actually looking. The homepage talks to founders, reps, sales leaders, ops and growth at once, so it speaks to all of them and lands on none. That sits upstream of every channel decision, which is why it's where I'd start.",
- "strengths": [
-  "The G2 reviews. The best proof asset Clarify has, and the least used.",
-  "The HubSpot and Salesforce connectors. Clarify is the only one of the five that can run alongside a team's existing CRM, which turns switching into a low-risk decision instead of a rip and replace.",
-  "15 customer stories and about 25 named quotes, several with numbers in them.",
-  "Comparison pages for nine tools, plus the alternatives posts. The structure is already built.",
-  "Advocacy is already running. You three times over, plus customers and partners posting. That is hard to start, and it exists.",
-  "Built for AI search and easy trial: AI crawlers allowed, an llms.txt, and a free tier with unlimited seats."
- ],
- "steps": [
+ "byline": "Matt Lyman. Nov 19, 2026. Built from public sources and my own Flosum data.",
+ "description": "A short read on Clarify: the pain, the bet, and how to say it one way.",
+ "sections": [
   {
-   "n": 1,
-   "title": "Make the site say who it's for",
-   "body": "One buyer, one trigger, one story, and a homepage that says it. The category label can be settled after. The homepage can't wait for it."
+   "paras": [
+    "Nobody updates the CRM, so nobody trusts it.",
+    "In March, MQLs at Flosum were up 343%. Then I checked where they came from. 57% were one gated whitepaper, 95% of those were APAC, and none became an opportunity. The dashboard said great month. The pipeline said otherwise.",
+    "The version I see more often is quieter. There's no source of truth, so five people pull five different reports. Every number is defensible and none of them agree, and a meeting gets booked to decide whose is right. A CRM someone has to feed produces exactly that, because the record is only as current as the last person who had time. Clarify does the updating."
+   ]
   },
   {
-   "n": 2,
-   "title": "Put the proof where buyers look",
-   "body": "The reviews and the customer numbers go onto the comparison pages, into the advocacy posts, and onto the pages people actually search. Right now the proof and the distribution exist separately from each other."
+   "heading": "The bet",
+   "callout": "Clarify becomes the default answer to “what CRM should we use” for founders who want one go-to-market system, not seven.",
+   "paras": [
+    "That question gets asked in two places, a search box and an AI chat, and each one answers with whatever it's been taught. So the bet gets measured there. When a founder asks, does Clarify come back by name, in the right category, for the right reason? That depends on Clarify saying the same thing everywhere it can be read.",
+    "The one-system part is already in the product. A founder's go-to-market piles up: something to find people, somewhere to run campaigns, forms, workflows, signals on who's in-market. Clarify's own app lists all of those next to the records."
+   ]
   },
   {
-   "n": 3,
-   "title": "Move the pages that almost rank",
-   "body": "Semrush estimates put the startups CRM post around #39 for \"crm for startups.\" Merge the duplicates and fix what already exists before writing anything new. Worth a check against Search Console first."
+   "heading": "What the category is doing",
+   "paras": [
+    "The week of Nov 11 put real money behind the fight to replace Salesforce. RevGenius CEO Jared Robin [counted $153M raised in six days](https://www.linkedin.com/posts/jaredrobin_153-million-in-six-days-all-of-it-aimed-share-7528456691416190977-wtXX), and he pointed out the bets aren't the same one. One sits on top of the CRM and does the selling work a CRM only records. One replaces the record. One takes the switching risk off the table with migration help and credit for the contract you have left."
+   ]
   },
   {
-   "n": 4,
-   "title": "Build one thing for people who have never heard of Clarify",
-   "body": "Data Rot Score: upload a CRM export, get a score back on stale contacts, duplicates, missing owners, empty fields and dead domains, then import the cleaned data into the free tier. Search volume here is small, so this is about leads and links rather than traffic."
+   "heading": "Why one team is the way in",
+   "paras": [
+    "Jared's conclusion is the useful one: “The way in is one sales team.” Clarify's [HubSpot page](https://www.clarify.ai/integrations/hubspot) already says there's nothing to migrate, and [G2 reviewers](https://www.g2.com/products/clarify-crm/reviews) rate Clarify 4.9 out of 5 across 35 reviews. A team running HubSpot can add Clarify next to it, prove it, and expand from there."
+   ]
+  },
+  {
+   "heading": "What the buyer is buying",
+   "paras": [
+    "A label tells a buyer where to look. An outcome tells them why to stay, and I'd write every page from the second.",
+    "“AI-native CRM” is the shelf. The version a founder cares about is the Tuesday one: I took the call, I closed the laptop, and the record already knows.",
+    "“Nothing to migrate” is Clarify's own phrase and the best line on the site. It answers the question every CRM evaluation stalls on, which is who's going to move all of this.",
+    "Signals, per Clarify's page, is about seeing which accounts are in-market right now, not after they've gone cold. For the buyer, that's hearing about the account while it's still warm."
+   ]
+  },
+  {
+   "heading": "Say it one way",
+   "paras": [
+    "Say what Clarify fixes in one sentence and use it everywhere. Say what Clarify is in one label and put it next to the name every time. “AI-native CRM” is plain on purpose. It tells a buyer, and the models that answer for them, exactly which shelf this sits on, and it can stay that way until buyers hand Clarify a better word. Naming a category of its own is a later call, and launch evidence should make it, not a conference room."
+   ],
+   "lines_label": "The message",
+   "lines": [
+    "Nobody updates the CRM, so nobody trusts it.",
+    "Clarify is the AI-native CRM that does the updating, built for founders and small sales teams.",
+    "Add it next to HubSpot. Nothing to migrate."
+   ]
+  },
+  {
+   "heading": "Where I'd start",
+   "paras": [
+    "With what already works. Lead with the pain on the pages that already get traffic, put the name next to what it is, and show the one proof Clarify has: HubSpot keeps running and there's nothing to migrate.",
+    "I'd want to learn two things early. Who makes the first purchase, the founder or the first revenue hire? And does AI-native CRM stay the label, or do buyers give Clarify a better one?"
+   ]
+  },
+  {
+   "heading": "Why I'd do it this way",
+   "paras": [
+    "I sell to people, not companies. People have pain points, needs, fears and hopes, and the job is to fill the gap. At Flosum, practitioner content led with the problem people were living with, failed deployments and merge conflicts, and the product came after the credibility. LinkedIn followers grew 41.7% in 11 months alongside it."
+   ]
   }
  ],
- "questions": [
-  "Who owns pricing?",
-  "Lightfield runs a comparison page against Clarify and Google's AI answers lean on it. Answer it directly, or stay out of it?"
- ],
- "next": "Next step: the detailed plan behind this isn't public. Ask and I'll send it.",
- "footnote": "Search figures are Semrush estimates for US searches, checked Nov 17, 2026. Customer and comparison counts are from clarify.ai on the same date.",
- "steps_intro": "In order. Each one makes the next one cheaper.",
- "questions_intro": "These are the things only you can answer."
+ "next": "The detailed plan behind this isn't public.",
+ "footnote": "Sources checked Nov 19, 2026: clarify.ai, Clarify's G2 profile, and Jared Robin's LinkedIn post from Nov 17. Flosum figures are from my own data."
 }
