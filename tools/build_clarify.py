@@ -6,12 +6,30 @@ root = pathlib.Path(__file__).resolve().parent.parent
 c = json.loads((root / "tools" / "clarify_content.json").read_text(encoding="utf-8"))
 e = html.escape
 
-def li(items):
-    return "".join(f"<li>{e(i)}</li>" for i in items)
+import re
 
-def step(i):
-    return (f"<article class=\"idea\"><h3><span class=\"num\">{i['n']}</span>{e(i['title'])}</h3>"
-            f"<p>{e(i['body'])}</p></article>")
+def rich(s):
+    """Escape text, then turn [label](https://url) into links. Only http(s) URLs are linked."""
+    out = e(s)
+    return re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
+                  lambda m: f'<a href="{m.group(2)}" rel="noopener">{m.group(1)}</a>', out)
+
+def section(s):
+    parts = ['<section class="body-sec"><div class="wrap">']
+    if s.get("heading"):
+        parts.append(f"<h2>{e(s['heading'])}</h2>")
+    if s.get("callout"):
+        parts.append(f'<div class="callout"><p>{rich(s["callout"])}</p></div>')
+    first = not s.get("heading")
+    for p in s.get("paras", []):
+        cls = "lead first" if first else "lead"
+        first = False
+        parts.append(f'<p class="{cls}">{rich(p)}</p>')
+    if s.get("lines"):
+        label = f'<span class="msg-label">{e(s["lines_label"])}</span>' if s.get("lines_label") else ""
+        parts.append('<div class="msg">' + label + "".join(f"<p>{rich(l)}</p>" for l in s["lines"]) + "</div>")
+    parts.append("</div></section>")
+    return "".join(parts)
 
 css = """
 :root{--slate:#46605A;--slate-dk:#2F433E;--ink:#22302D;--muted:#5E6B68;--yellow:#F4C430;--yellow-soft:#FBE9A6;--bg:#F6F7F5;--card:#FFFFFF;--line:#E3E7E4}
@@ -34,6 +52,12 @@ p{margin:0 0 1em}
 .byline{color:var(--muted);font-size:.95rem;margin:0 0 .8em}
 .dl{margin:0 0 1.2em}.dl a{font:600 .9rem Montserrat,sans-serif;color:var(--slate-dk);background:var(--yellow-soft);border-radius:999px;padding:.5em 1.1em;text-decoration:none;display:inline-block}.dl a:hover{background:var(--yellow)}
 .lead{max-width:760px}
+.lead.first{font-size:1.5rem;line-height:1.4;font-weight:700;color:var(--slate-dk)}
+.callout{max-width:760px;background:var(--yellow-soft);border-left:6px solid var(--yellow);border-radius:12px;padding:14px 20px;margin:0 0 1.1em}
+.callout p{margin:0;font-weight:700;color:var(--slate-dk);font-size:1.15rem;line-height:1.5}
+.msg{max-width:760px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 22px 6px;margin:1.2em 0 0}
+.msg-label{display:block;font:700 .78rem Montserrat,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 .5em}
+.msg p{font-weight:600;color:var(--slate-dk)}
 section{padding:26px 0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
@@ -54,8 +78,11 @@ li{margin:0 0 .55em}
 .foot-print{display:none}
 @media print{
  body{background:#fff;font-size:8.9pt;line-height:1.32}
- .steps-sec h2{font-size:12pt;margin:2px 0 0}
- .nav,.read-sec,.see-sec,.q-sec,.foot-screen,.dl{display:none}
+ h2{font-size:12pt;margin:6px 0 2px}
+ .nav,.foot-screen,.dl{display:none}
+ .callout,.msg{break-inside:avoid;padding:6px 10px;margin:0 0 5px}
+ .callout p{font-size:9.6pt}
+ .lead.first{font-size:12pt}
  .hero{padding:0 0 4px;border-bottom:3px solid var(--yellow);margin-bottom:6px}
  h1{font-size:26pt;margin:.15em 0 .05em}
  .byline{font-size:8.6pt;margin:0 0 4px}
@@ -90,7 +117,7 @@ page = f"""<!DOCTYPE html>
 {GTM_HEAD}
 <title>{e(c['title'])} | Matt Lyman</title>
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="A short read on Clarify, prepared for Patrick Thompson.">
+<meta name="description" content="{e(c['description'])}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,23 +128,15 @@ page = f"""<!DOCTYPE html>
 {GTM_BODY}
 <nav class="nav"><div class="wrap navin"><a class="brand" href="/">Matt Lyman</a><a class="btn" href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></div></nav>
 <header class="hero"><div class="wrap">
-<span class="pill">{e(c['pill'])}</span>
 <h1>{e(c['title'])}</h1>
 <p class="byline">{e(c['byline'])}</p>
 </div></header>
 <main>
-<section class="read-sec"><div class="wrap"><h2>My read</h2><p class="lead">{e(c['read'])}</p></div></section>
-<section class="see-sec"><div class="wrap"><h2>What's working</h2>
-<div class="card"><ul>{li(c['strengths'])}</ul></div></div></section>
-<section class="steps-sec"><div class="wrap"><h2>Where I'd start</h2>
-<p class="lead steps-intro">{e(c['steps_intro'])}</p>
-{''.join(step(i) for i in c['steps'])}
-<p class="next">{e(c['next'])}</p>
-<p class="foot-print">{e(c['footnote'])}</p>
-</div></section>
-<section class="q-sec"><div class="wrap"><h2>Open questions</h2><p class="lead">{e(c['questions_intro'])}</p><ul>{li(c['questions'])}</ul></div></section>
+{''.join(section(s) for s in c['sections'])}
+<section class="next-sec"><div class="wrap"><p class="next">{e(c['next'])}</p>
+<p class="foot-print">{rich(c['footnote'])}</p></div></section>
 </main>
-<footer class="foot-screen"><div class="wrap foot"><p>{e(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p><p>This page uses Google Analytics to count visits.</p></div></footer>
+<footer class="foot-screen"><div class="wrap foot"><p>{rich(c['footnote'])}</p><p><a href="/">mattlyman.com</a> &middot; <a href="https://www.linkedin.com/in/mattlyman" rel="me noopener">LinkedIn</a></p><p>This page uses Google Analytics to count visits.</p></div></footer>
 </body>
 </html>
 """
