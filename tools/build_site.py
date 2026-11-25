@@ -2,24 +2,28 @@ import json, html, os
 OUT=os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)),".."))
 SITE="https://mattlyman.com"
 LI="https://www.linkedin.com/in/mattlyman"
+EMAIL=os.environ.get("SITE_EMAIL","").strip()
+EM_BTN=f'{EM_BTN}' if EMAIL else ''
+EM_PARA=(f'email me at <a href="mailto:{EMAIL}">{EMAIL}</a> or message me on LinkedIn.' if EMAIL else 'LinkedIn is the fastest way to reach me.')
+EM_FAQ=(f'Reach him by email at {EMAIL} or on LinkedIn at linkedin.com/in/mattlyman.' if EMAIL else 'The best way to reach him is LinkedIn at linkedin.com/in/mattlyman.')
 e=html.escape
 
 faq=[
 ("Who is Matt Lyman?","Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He was named a FINITE Influential 30 Marketer in B2B SaaS in 2023."),
 ("What does Matt Lyman do?","He is a B2B marketing leader who builds demand generation programs around buyer stories and the data to prove they work. He has built demand engines across paid media, ABM, SEO, events, and content at Chef, LeanData, and Flosum, and builds with AI every day."),
 ("What is B2H?","Business to human is Matt's marketing philosophy. B2B and B2C are labels for what the buyer is spending, but the buyer is a person either way, with pain points, worries, and hopes. Matt builds marketing that finds the gap that person is living with and fills it: a need, an emotion, a simpler day. It shows up in how he tells stories, the content he makes, and how his teams work."),
-("What results has Matt driven?","At LeanData, marketing's share of new business pipeline went from 18% to 43% by 2024 and topped 50% in two quarters. In 2023, demand gen spend fell 41% while marketing-sourced pipeline grew 45%. At Flosum, cost per paid MQL fell 87% in six months and monthly search impressions grew 1,329%."),
+("What results has Matt driven?","At LeanData, marketing's share of new business pipeline went from 18% to 43% by 2024 and topped 50% in two quarters. In 2023, demand gen spend fell 41% while marketing-sourced pipeline grew 45%. At Flosum, marketing-influenced pipeline grew about 26% from his first month to the H2 2025 monthly average, cost per paid MQL fell 87% and cost per meeting fell 78% in six months, and monthly search impressions grew 1,329%."),
 ("What is Matt's experience with ABM and GEO/AEO?","At Flosum, Matt ran ABM across 51 named accounts and 10 AEs. Target accounts clicked at 3 to 7x the campaign average, and 7 became opportunities within five months. He also led an SEO and GEO/AEO rebuild with 120+ assets updated, rebuilt FAQs, and third-party authority placements, which took monthly search impressions from 70,000 to over one million."),
 ("How does Matt use AI?","Matt builds with AI every day. At Flosum he worked with product marketing on an agent that tracks competitor and industry news for Sales, built an ABM dashboard that pulls ad, intent, and site data into one view, set up an AI SDR, and rebuilt content for AI search (GEO/AEO). This site was built with Claude, and its code is public on GitHub. The What I Build with AI section on this page has the details."),
 ("What roles is Matt open to?","Matt is open to VP, Head of, and Senior Director roles in marketing, demand generation, and growth at growth-stage B2B software companies."),
 ("What does Matt do outside of marketing?","He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA. He also rides bikes, a lot."),
-("Where can I hear Matt talk about marketing and leadership?","Matt has been a guest on Marketers of Technology, Straight To Voicemail, Content Matters, The Hype Within, and Everything's Coming Up Marketing. He moderated LeanData webinars on event strategy, co-selling, customer champions, and go-to-market efficiency, was a panelist at RevGenius's RevCon 2024 on scaling demand generation past $25M, and gave a Finovate talk on LeanData's revenue orchestration platform. Links to each are in the Talks, podcasts, and webinars section of this page."),
-("Where is Matt based and how can I reach him?","Seattle, working remotely since 2020. The best way to reach him is LinkedIn at linkedin.com/in/mattlyman."),
+("Where can I hear Matt talk about marketing and leadership?","Matt has been a guest on Marketers of Technology, Content Matters, The Hype Within, and Everything's Coming Up Marketing. He moderated six LeanData webinars on event strategy, co-selling, customer champions, and go-to-market efficiency, was a panelist at RevGenius's RevCon 2024 on scaling demand generation past $25M, and gave a Finovate talk on LeanData's revenue orchestration platform. Links to each are in the Talks, podcasts, and webinars section of this page."),
+("Where is Matt based and how can I reach him?","Seattle, working remotely since 2020. "+EM_FAQ),
 ]
 
 
 episodes=[
- {"show":"Straight To Voicemail","title":"How can teams build trust to maintain consistent brand messaging?","date":"2025-09-23","year":"2025","mins":5,"cat":"pod",
+ {"hide":True,"show":"Straight To Voicemail","title":"How can teams build trust to maintain consistent brand messaging?","date":"2025-09-23","year":"2025","mins":5,"cat":"pod",
   "url":"https://podcasts.apple.com/us/podcast/how-can-teams-build-trust-to-maintain-consistent-brand/id1648953137?i=1000728017889",
   "blurb":"Why brand consistency is really about trust, and how documentation, transparent strategy, and feedback loops keep teams aligned.","type":"podcast"},
  {"show":"Marketers of Technology","title":"Welcome to the era of B2H","date":"2025-08-27","year":"2025","mins":33,"cat":"pod",
@@ -37,25 +41,25 @@ episodes=[
  {"show":"RevGenius","role":"Panelist","title":"RevCon 2024: Demand Gen Playbook: How to Scale Beyond $25M","date":"2024-10-11","year":"2024","mins":None,"cat":"web",
   "url":"https://www.youtube.com/watch?v=pEEVwaP_GQc",
   "blurb":"Four marketing leaders on how to scale demand generation past $25M in revenue, moderated by RevGenius CEO Jason Hubbard.","type":"webinar"},
- {"show":"LeanData","role":"Moderator","title":"Report Insights: Cracking the Code of GTM Efficiency in 2024","date":"2024-11-07","year":"2024","mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"Report Insights: Cracking the Code of GTM Efficiency in 2024","date":"2024-11-07","year":"2024","mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/report-insights-cracking-the-code-of-gtm-efficiency-in-2024/",
   "blurb":"A panel with leaders from UserGems, Qualified, and LeanData on the 2024 go-to-market efficiency report: opportunity-based selling, AI in SDR work, and tech stack consolidation.","type":"webinar"},
  {"show":"Finovate","host":"Streamly","title":"Transforming CRM in financial services: LeanData's approach","date":"2024-05-21","year":"2024","mins":None,"cat":"web",
   "url":"https://streamly.video/video/transforming-crm-in-financial-services-lean-data-s-approach",
   "blurb":"Matt on LeanData's revenue orchestration platform and what it does for data management and operational efficiency in financial services.","type":"video"},
- {"show":"LeanData","role":"Moderator","title":"3 Ways to Maximize Returns for Your Next Event","date":None,"year":None,"mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"3 Ways to Maximize Returns for Your Next Event","date":None,"year":None,"mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/events-playbook-webinar/",
   "blurb":"Event experts from LeanData, CaptivateIQ, and Qualified on getting buy-in, booking meetings, and choosing which conferences to sponsor.","type":"webinar"},
- {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Activating Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Activating Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/activating-your-event-strategy/",
   "blurb":"Before, during, and after: how sales, marketing, and ops align on event goals, stand out on the floor, and follow up.","type":"webinar"},
- {"show":"LeanData","role":"Moderator","title":"Maximizing Success: Getting the Most Out of Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"Maximizing Success: Getting the Most Out of Your Event Strategy","date":None,"year":None,"mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/maximizing-success-getting-the-most-out-of-your-event-strategy/",
   "blurb":"Booking more meetings before the event, engaging the people walking past the booth, and reaching the right ones by phone afterward.","type":"webinar"},
- {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: 3 Killer Strategies for High-Octane Co-Selling","date":None,"year":None,"mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"Steal that Playbook: 3 Killer Strategies for High-Octane Co-Selling","date":None,"year":None,"mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/strategies-for-high-octane-co-selling/",
   "blurb":"Using partner data and intent signals to find new deals, support account-based plays, and spot churn risk.","type":"webinar"},
- {"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Ideas to Make Your Buyers Champions for Life","date":None,"year":None,"mins":None,"cat":"web",
+ {"hide":True,"show":"LeanData","role":"Moderator","title":"Steal that Playbook: Ideas to Make Your Buyers Champions for Life","date":None,"year":None,"mins":None,"cat":"web",
   "url":"https://www.leandata.com/resources/champions-for-life-webinar/",
   "blurb":"Activating champions to close deals and build loyalty, including personalized gifting and less manual work.","type":"webinar"},
 ]
@@ -68,7 +72,7 @@ def ep_meta(x):
     return " &middot; ".join(e(t) for t in parts)
 eps_html="\n".join(
  f'<li data-g="{x["cat"]}"><span class="show">{ep_meta(x)}</span>'
- f'<a href="{x["url"]}" rel="noopener">{e(x["title"])}</a><p>{e(x["blurb"])}</p></li>' for x in episodes)
+ f'<a href="{x["url"]}" rel="noopener">{e(x["title"])}</a><p>{e(x["blurb"])}</p></li>' for x in episodes if not x.get("hide"))
 
 faq_html="\n".join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in faq)
 
@@ -77,6 +81,7 @@ jsonld={"@context":"https://schema.org","@graph":[
  {"@type":"ProfilePage","@id":SITE+"/#webpage","url":SITE+"/","name":"Matt Lyman | B2B Marketing Leader, Demand Generation","isPartOf":{"@id":SITE+"/#website"},"about":{"@id":SITE+"/#person"},"mainEntity":{"@id":SITE+"/#person"},"inLanguage":"en-US"},
  {"@type":"Person","@id":SITE+"/#person","name":"Matt Lyman","url":SITE+"/","image":SITE+"/images/matt-headshot.jpg","jobTitle":"B2B Marketing Leader","award":"FINITE Influential 30 Marketer in B2B SaaS (2023)","description":"B2B marketing leader with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. Most recently VP of Marketing at Flosum.",
   "address":{"@type":"PostalAddress","addressLocality":"Seattle","addressRegion":"WA","addressCountry":"US"},
+  **({"email":"mailto:"+EMAIL} if EMAIL else {}),
   "sameAs":[LI,"https://www.ride4all.org"],
   "knowsAbout":["Demand generation","Marketing operations","Account-based marketing","Paid media","SEO","Generative engine optimization","Answer engine optimization","Marketo","HubSpot","Salesforce","Lead scoring","Marketing attribution","B2B SaaS marketing","Team leadership","AI agents for marketing","Generative AI"],
   "alumniOf":[
@@ -182,7 +187,7 @@ section{{scroll-margin-top:62px}}
 .cta{{display:flex;flex-wrap:wrap;gap:12px;margin:1.4em 0 .8em}}
 .open{{font-size:1.02rem;color:var(--ink)}}
 .open b{{color:var(--slate-dk)}}
-.stats{{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}}
+.stats{{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}}
 .stat{{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px 18px;border-top:6px solid var(--yellow)}}
 .stat .n{{font:400 clamp(2.2rem,5vw,3.2rem)/1 Anton,Impact,sans-serif;color:var(--slate)}}
 .stat .l{{font-weight:600;margin:.5em 0 .3em;line-height:1.4}}
@@ -294,7 +299,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   <a class="brand" href="#top">Matt Lyman</a>
   <ul class="links">
    <li><a href="#about">About</a></li>
-   <li><a href="#b2h">B2H</a></li>
+   <li><a href="#b2h">Approach</a></li>
    <li><a href="#proof">Work</a></li>
    <li><a href="#people">Testimonials</a></li>
    <li><a href="#ai">AI</a></li>
@@ -315,10 +320,10 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
     <h1>Matt Lyman</h1>
     <p class="sub">Demand generation built on stories buyers believe and numbers Sales trusts.</p>
     <p>I fix pipeline. I find where it's actually broken: conversion rates, messaging that doesn't land, content that doesn't move buyers, and the handoffs between Marketing, Sales, and Customer Success where revenue leaks. Then I build the fix myself, from a Marketo rebuild to an ABM dashboard, and coach the team to run it without me. Most recently VP of Marketing at Flosum, reporting to the CEO. Seattle, remote.</p>
-    <p class="community-line">Founder, R.I.D.E. 4 ALL. President, Highline Special Needs PTA.</p>
     <p class="community-line">Named a FINITE Influential 30 Marketer in B2B SaaS, 2023.</p>
     <div class="cta">
      <a class="btn primary" href="{LI}" rel="me noopener">Message Matt on LinkedIn</a>
+     {EM_BTN}
      <a class="btn ghost" href="/Matt_Lyman_Resume.pdf">Resume (PDF)</a>
     </div>
     <p class="open"><b>Open to</b> VP and Head-of marketing roles at growth-stage B2B software companies where pipeline is the problem.</p>
@@ -331,8 +336,6 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   <div class="stats">
    <div class="stat"><div class="n">+45%</div><div class="l">Marketing-sourced pipeline on 41% less demand gen spend, in the same year</div><div class="s">LeanData, 2022 to 2023</div></div>
    <div class="stat"><div class="n">18% to 50%</div><div class="l">Marketing's share of new business pipeline</div><div class="s">LeanData, first quarter to peak quarter</div></div>
-   <div class="stat"><div class="n">+1,329%</div><div class="l">Monthly Google search impressions, organic, after the SEO and GEO/AEO rebuild</div><div class="s">Flosum, Sep to Nov 2025</div></div>
-   <div class="stat"><div class="n">7 of 51</div><div class="l">Named ABM accounts that became opportunities in five months</div><div class="s">Flosum, Nov to Apr</div></div>
    <div class="stat"><div class="n">87%</div><div class="l">Drop in cost per paid MQL in six months</div><div class="s">Flosum, Oct to Mar</div></div>
    <div class="stat"><div class="n">120%+</div><div class="l">Average quota attainment of the SDR and BDR teams I led</div><div class="s">Chef Software</div></div>
   </div>
@@ -350,7 +353,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
    <h2>About</h2>
    <p class="lead">Matt Lyman is a B2B marketing leader based in Seattle with nearly 20 years in marketing, specializing in demand generation, with hands-on marketing operations and AI skills behind it. He has served as VP of Marketing at Flosum, VP of Demand Generation at LeanData, and Director of Marketing at Chef Software, where the revenue team grew about 2.7x through the company's acquisition by Progress. He founded R.I.D.E. 4 ALL, a nonprofit for inclusive recreation, and is president of the Highline Special Needs PTA.</p>
    <p>I review customer calls, talk to the people who said yes and the ones who said no, and build programs around what I find. Nearly 20 years in marketing, most recently at Chef, LeanData, and Flosum, where I managed managers, ran teams of 4 to 7, and built a lot of the machinery myself: a Marketo rebuild, executive dashboards, a competitor-tracking agent.</p>
-   <p>Before software, I ran sales and marketing for a craft beer publication. At Flosum, I scrapped product-first messaging and rebuilt the strategic narrative from the ground up, then made sure the numbers behind it were ones Sales believes. <a href="#b2h">Here's how I think about buyers.</a></p>
+   <p>Alongside my early software roles, I ran sales and marketing for a craft beer publication. At Flosum, I scrapped product-first messaging and rebuilt the strategic narrative from the ground up, then made sure the numbers behind it were ones Sales believes. <a href="#b2h">Here's how I think about buyers.</a></p>
    <p>I build with AI every day. <a href="#ai">Here's what I've built.</a></p>
    <p>My job is to coach my team well enough that they can take my job and go find a bigger one.</p>
   </div>
@@ -383,8 +386,9 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
     <p class="title">VP of Marketing</p>
     <p class="scope">Rebuilt the marketing function at an enterprise Salesforce governance platform. Reported to the CEO, led a team of 5 with 3 direct reports. Agency partners ran the ad accounts. I owned strategy, measurement, and creative direction.</p>
     <ul>
+     <li>Grew marketing-influenced pipeline about 26%, from my first month to the H2 2025 monthly average.</li>
      <li>Redid the positioning from the strategic level down. Corporate messaging first, then separate buyer committees, pain points, and campaigns for each of the two product lines.</li>
-     <li>Cost per paid MQL down 87% in six months. In one quarter, spend rose about 42% while paid MQLs rose 167%.</li>
+     <li>Cost per paid MQL down 87% and cost per meeting down 78% in six months. In one quarter, spend rose about 42% while paid MQLs rose 167%.</li>
      <li>Monthly search impressions went from 70,000 to over one million, up 1,329%, through the SEO and GEO/AEO rebuild: 120+ assets updated, FAQ rebuilds, third-party authority placements.</li>
      <li>ABM across 51 named accounts and 10 AEs. Target accounts clicked at 3 to 7x the campaign average, and 7 became opportunities within five months, mostly through BDR meetings.</li>
      <li>Took demand gen into the UK, India, Europe, and Brazil. UK competitor campaigns returned about 21x in pipeline on what we spent.</li>
@@ -445,9 +449,10 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
 
 <section id="reach" class="band" aria-label="Contact">
  <div class="wrap">
-  <p>If your pipeline has a leak, message me on LinkedIn.</p>
+  <p>If your pipeline has a leak, let's talk.</p>
   <div class="cta">
    <a class="btn primary" href="{LI}" rel="me noopener">Message Matt on LinkedIn</a>
+   {EM_BTN}
    <a class="btn ghost" href="/Matt_Lyman_Resume.pdf">Resume (PDF)</a>
   </div>
  </div>
@@ -505,6 +510,7 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   <ul class="eps" id="eps" role="tabpanel">
 {eps_html}
   </ul>
+  <p class="more">Also moderated six LeanData webinars on event strategy, co-selling, customer champions, and GTM efficiency.</p>
  </div>
 </section>
 
@@ -537,9 +543,10 @@ footer{{padding:28px 0 40px;font-size:.85rem;color:var(--muted);text-align:cente
   <figure class="photo"><img src="/images/matt-beach.jpg" width="1200" height="900" loading="lazy" alt="Matt Lyman smiling in sunglasses and a green cap on a driftwood beach below a sandy bluff"></figure>
   <div>
    <h2>Say hello</h2>
-   <p>If you're hiring for a marketing leader, or you just want to talk pipeline, LinkedIn is the fastest way to reach me.</p>
+   <p>If you're hiring for a marketing leader, or you just want to talk pipeline, {EM_PARA}</p>
    <div class="cta">
     <a class="btn primary" href="{LI}" rel="me noopener">Message Matt on LinkedIn</a>
+    {EM_BTN}
     <a class="btn ghost" href="/Matt_Lyman_Resume.pdf">Resume (PDF)</a>
    </div>
   </div>
@@ -571,7 +578,7 @@ llms=f"""# Matt Lyman
 ## Summary
 - Roles: VP of Marketing at Flosum (Apr 2025 to Jun 2026); VP of Demand Generation at LeanData (Feb 2022 to Nov 2024); Director of Marketing at Chef Software (2015 to 2022, acquired by Progress).
 - LeanData: marketing's share of new business pipeline went from 18% to 43% by 2024, topping 50% in two quarters; in 2023 demand gen spend fell 41% while marketing-sourced pipeline grew 45%.
-- Flosum: cost per paid MQL down 87% in six months; meetings from paid up 467%; monthly search impressions up 1,329% after an SEO and GEO/AEO rebuild.
+- Flosum: marketing-influenced pipeline up about 26% from first month to the H2 2025 monthly average; cost per paid MQL down 87% and cost per meeting down 78% in six months; monthly search impressions up 1,329% after an SEO and GEO/AEO rebuild.
 - Chef: revenue team grew about 2.7x through acquisition by Progress; SDR and BDR teams averaged 120%+ of quota.
 - Award: named a FINITE Influential 30 Marketer in B2B SaaS, 2023.
 - Community: founder of R.I.D.E. 4 ALL (inclusive recreation nonprofit); president of the Highline Special Needs PTA.
@@ -579,7 +586,7 @@ llms=f"""# Matt Lyman
 ## Links
 - [Home page]({SITE}/): full background, results, and FAQ
 - [Resume (PDF)]({SITE}/Matt_Lyman_Resume.pdf)
-- [LinkedIn]({LI})
+- [LinkedIn]({LI}){(chr(10)+"- Email: "+EMAIL) if EMAIL else ""}
 - [R.I.D.E. 4 ALL](https://www.ride4all.org)
 
 ## Talks, podcasts, and webinars
